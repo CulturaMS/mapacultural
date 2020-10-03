@@ -41,6 +41,10 @@ return [
                         return false;
                     }
 
+                    if($app->user->is('admin')){
+                        return true;
+                    }
+
                     $plugin = $app->plugins['AldirBlanc'];
 
                     // só pode acessar as demais urls quem tiver controle sobre o agente da SECULT
