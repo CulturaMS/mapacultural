@@ -1,4 +1,4 @@
-FROM mapasculturais/mapasculturais:v5.0.0-rc2
+FROM mapasculturais/mapasculturais:v5.0.0-rc3
 
 
 COPY compose/common/config.php /var/www/html/protected/application/conf/config.php
