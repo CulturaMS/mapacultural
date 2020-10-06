@@ -10,6 +10,7 @@ return [
             'namespace' => 'AldirBlanc',
             'config' => [
                 'project_id' => 1,
+                'inciso1_enabled' => true,
                 'inciso1_opportunity_id' => env('AB_INCISO1_OPPORTUNITY_ID', 1),
                 'inciso2_opportunity_ids' => (array) json_decode(env('AB_INCISO2_OPPORTUNITY_IDS', '[]')),
                 'msg_inciso2_disabled' => 'A solicitação deste benefício será lançada em breve. Acompanhe a divulgação pelas instituições responsáveis pela gestão da cultura em seu município!',
