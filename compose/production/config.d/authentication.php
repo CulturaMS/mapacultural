@@ -12,7 +12,7 @@ return [
         'salt' => env('AUTH_SALT', null),
         'timeout' => env('AUTH_TIMEOUT', '24 hours'),
   
-        'urlSupportEmail' => 'mailto:',
+        'urlSupportEmail' => '4fc3a3b006b911eb8d80bf0937295de0@tickets.tawk.to',
         'urlImageToUseInEmails' => 'https://www.mapacultural.ms.gov.br/assets/aldirblanc/img/logo-aldir-blanc.png',
         'urlTermsOfUse' => 'https://www.mapacultural.ms.gov.br/files/opportunity/1/termo_de_uso_-_mapa_cultural_de_ms.pdf',
         'enableLoginByCPF' => env('AUTH_LOGIN_BY_CPF', true),
