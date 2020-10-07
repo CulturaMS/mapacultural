@@ -13,8 +13,8 @@ return [
         'timeout' => env('AUTH_TIMEOUT', '24 hours'),
   
         'urlSupportEmail' => 'mailto:',
-        'urlImageToUseInEmails' => '/assets/aldirblanc/img/governo-cultura.png',
-        'urlTermsOfUse' => 'http://www.mapacultural.ms.gov.br/files/opportunity/1/termo_de_uso_mapa_cultural_de_mato_grosso_do_sul.pdf',
+        'urlImageToUseInEmails' => 'https://www.mapacultural.ms.gov.br/assets/aldirblanc/img/logo-aldir-blanc.png',
+        'urlTermsOfUse' => 'https://www.mapacultural.ms.gov.br/files/opportunity/1/termo_de_uso_-_mapa_cultural_de_ms.pdf',
         'enableLoginByCPF' => env('AUTH_LOGIN_BY_CPF', true),
         'passwordMustHaveCapitalLetters' => env('AUTH_PASS_CAPITAL_LETTERS', true),
         'passwordMustHaveLowercaseLetters' => env('AUTH_PASS_LOWERCASE_LETTERS', true),
