@@ -44,6 +44,7 @@ services:
       - APP_MODE=production
       - ACTIVE_THEME=MapasComBr
       - PENDING_PCACHE_RECREATION_INTERVAL=60
+      - CACHE_API=false
       
     depends_on:
       - db
