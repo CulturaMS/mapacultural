@@ -25,6 +25,12 @@ return [
                 'inciso1' => (array) json_decode(env('AB_INCISO1', '[]')),
                 'link_suporte' => env('AB_LINK_SUPORTE','suporte.mapacultural@fcms.ms.gov.br'),
                 'privacidade_termos_condicoes' => env('AB_PRIVACIDADE_TERMOS','https://www.mapacultural.ms.gov.br/files/opportunity/1/termo_de_uso_-_mapa_cultural_de_ms.pdf'),
+                'prefix_project' =>  'Lei Aldir Blanc | ' ,
+                'inciso2_default' => [
+                    "avatar"=>"avatar-aldirblanc.jpg",
+                    "seal"=>1,
+                    "shortDescription"=>"Benefício para auxiliar espaços e organizações culturais a manter suas atividades durante o isolamento social ocasionado pela pandemia covid-19 - orientada pela Lei Aldir Blanc (Lei nº 14.017)."
+                ],
                 'inciso2' =>[
                     (object) ["owner" =>722, "city" => "Amambai"],
                     (object) ["owner" =>724, "city" => "Aparecida do Taboado-MS"],
