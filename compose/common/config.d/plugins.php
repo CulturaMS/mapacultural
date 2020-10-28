@@ -42,7 +42,7 @@ return [
                 'oportunidade_mediadores' => [
                     'med@inc1.com.br'=> [37],
                 ],
-                'lista_mediadores' =>  (array) json_decode(env('AB_LISTA_MEDIADORES', '[med@inc1.com.br]')),
+                'lista_mediadores' =>  (array) json_decode(env('AB_LISTA_MEDIADORES', '["med@inc1.com.br"]')),
 
                 'inciso2' =>[
                     (object) ["owner" =>722, "city" => "Amambai"],
