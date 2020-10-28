@@ -35,7 +35,7 @@ return [
                     "seal"=>1,
                     "shortDescription"=>"Benefício para auxiliar espaços e organizações culturais a manter suas atividades durante o isolamento social ocasionado pela pandemia covid-19 - orientada pela Lei Aldir Blanc (Lei nº 14.017)."
                 ],
-                'zammad_enable' => env('AB_ZAMMAD_ENABLE', true),
+                'zammad_enable' => env('AB_ZAMMAD_ENABLE', false),
                 'zammad_src_form' => env('AB_ZAMMAD_SRC_FORM', 'https://suporte.ms.mapasculturais.com.br/assets/form/form.js'),
                 'zammad_src_chat' => env('AB_ZAMMAD_SRC_CHAT', 'https://suporte.ms.mapasculturais.com.br/assets/chat/chat.min.js'),
 
