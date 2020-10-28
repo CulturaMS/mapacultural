@@ -38,6 +38,11 @@ return [
                 'zammad_enable' => env('AB_ZAMMAD_ENABLE', false),
                 'zammad_src_form' => env('AB_ZAMMAD_SRC_FORM', 'https://suporte.ms.mapasculturais.com.br/assets/form/form.js'),
                 'zammad_src_chat' => env('AB_ZAMMAD_SRC_CHAT', 'https://suporte.ms.mapasculturais.com.br/assets/chat/chat.min.js'),
+                'mediados_owner' => 1,
+                'oportunidade_mediadores' => [
+                    'med@inc1.com.br'=> [37],
+                ],
+                'lista_mediadores' =>  (array) json_decode(env('AB_LISTA_MEDIADORES', '[med@inc1.com.br]')),
 
                 'inciso2' =>[
                     (object) ["owner" =>722, "city" => "Amambai"],
