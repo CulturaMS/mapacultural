@@ -45,6 +45,27 @@ return [
                 // ],
                 // 'lista_mediadores' =>  (array) json_decode(env('AB_LISTA_MEDIADORES', '["med@inc1.com.br"]')),
 
+                // define os ids para dataprev e avaliadores genericos
+                'avaliadores_dataprev_user_id' => (array) json_decode(env('AB_AVALIADORES_DATAPREV_USER_ID', '["835"]')),
+                'avaliadores_genericos_user_id' => (array) json_decode(env('AB_AVALIADORES_GENERICOS_USER_ID', '[]')),
+
+                // define a exibição do resultado das avaliações para cada status (1, 2, 3, 8, 10)
+                'exibir_resultado_padrao' => (array) json_decode(env('AB_EXIBIR_RESULTADO_PADRAO', '["1", "2", "3", "10"]')),
+                'exibir_resultado_dataprev' => (array) json_decode(env('AB_EXIBIR_RESULTADO_DATAPREV', '["2"]')),
+                'exibir_resultado_generico' => (array) json_decode(env('AB_EXIBIR_RESULTADO_GENERICO', '[]')),
+                'exibir_resultado_avaliadores' => (array) json_decode(env('AB_EXIBIR_RESULTADO_AVALIADORES', '["3", "10"]')),
+
+                // mensagens de status padrao
+                'msg_status_sent' => env('AB_STATUS_SENT_MESSAGE', 'Consulte novamente em outro momento.'), // STATUS_SENT = 1
+                'msg_status_invalid' => env('AB_STATUS_INVALID_MESSAGE', 'Sua solicitação foi analisada e homologada pela equipe da FCMS, mas invalidada pelo Dataprev.'), // STATUS_INVALID = 2
+                'msg_status_approved' => env('AB_STATUS_APPROVED_MESSAGE', 'Seu cadastro foi analisado, homologado e validado pelo sistema Dataprev. Aguardando o pagamento do benefício.'), // STATUS_APPROVED = 10
+                'msg_status_notapproved' => env('AB_STATUS_NOTAPPROVED_MESSAGE', 'Seu cadastro cultural foi analisado, mas não foi homologado.'), // STATUS_NOTAPPROVED = 3
+                'msg_status_waitlist' => env('AB_STATUS_WAITLIST_MESSAGE', 'Os recursos disponibilizados já foram destinados. Para sua solicitação ser aprovada será necessário aguardar possível liberação de recursos. Em caso de aprovação, você também será notificado por e-mail. Consulte novamente em outro momento.'), //STATUS_WAITLIST = 8
+
+                // informacoes para recurso das inscrições com status 2 e 3
+                'email_recurso' => env('AB_EMAIL_RECURSO', 'mapacultural@fcms.ms.gov.br'),
+                'msg_recurso' => env('AB_MENSAGEM_RECURSO', 'Conforme previsto pela portaria FCMS Nº 13/2020 que trata a respeito deste benefício, poderá o interessado cadastrado interpor recurso administrativo do resultado. O recurso deverá ser apresentado exclusivamente por e-mail (mapacultural@fcms.ms.gov.br), e deverá conter, minimamente: a. Identificação completa do interessado/recorrente; b. Documentos comprobatórios, quando cabíveis; c. Identificação do item controverso/recorrido; d. Razões que fundamentem o recurso; e. Os pedidos do recurso.'),
+
                 'inciso2' =>[
                     (object) ["owner" =>722, "city" => "Amambai"],
                     (object) ["owner" =>724, "city" => "Aparecida do Taboado-MS"],
