@@ -83,6 +83,8 @@ return [
                     (object) ["owner" =>774, "city" => "Tacuru"],
                     (object) ["owner" =>775, "city" => "Terenos"],
                     (object) ["owner" =>776, "city" => "Três Lagoas"],
+                    (object) ["owner" =>725, "city" => "Aquidauana"],
+                    (object) ["owner" =>1174, "city" => "Nioaque"],
                 ]
 
             ],
