@@ -24,7 +24,7 @@ return [
                 'botao_home'=> env('AB_BOTAO_HOME','Solicite seu auxilio'),
                 'titulo_home'=> env('AB_TITULO_HOME','Lei Aldir Blanc'),
                 'inciso1' => (array) json_decode(env('AB_INCISO1', '[]')),
-                'link_suporte' => env('AB_LINK_SUPORTE','suporte.mapacultural@fcms.ms.gov.br'),
+                'link_suporte' => env('AB_LINK_SUPORTE', 'suporte.mapacultural.ms@gmail.com'),
                 'privacidade_termos_condicoes' => env('AB_PRIVACIDADE_TERMOS','https://www.mapacultural.ms.gov.br/files/opportunity/1/termo_de_uso_-_mapa_cultural_de_ms.pdf'),
                 'prefix_project' =>  'Lei Aldir Blanc | ' ,
                 'inciso2_default' => [
