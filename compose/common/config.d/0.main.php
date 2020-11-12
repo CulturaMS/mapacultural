@@ -1,7 +1,30 @@
 <?php 
 use MapasCulturais\i;
 
+/*
+    exemplo:
+      - REDIS_CACHE=d0637-prd-mapacultural-redis
+      - SESSIONS_SAVE_PATH=tcp://d0637-prd-mapacultural-redis:6379
+*/
+
+if (env('REDIS_CACHE', false)) {
+    $redis = new \Redis();
+    $redis->connect(env('REDIS_CACHE'));
+    $cache = new \Doctrine\Common\Cache\RedisCache;
+    $cache->setRedis($redis);
+    
+    $redis = new \Redis();
+    $redis->connect(env('REDIS_CACHE'));
+    $mscache = new \Doctrine\Common\Cache\RedisCache;
+    $mscache->setRedis($redis);
+} else {
+    $cache = new \Doctrine\Common\Cache\ApcuCache;
+    $mscache = new \Doctrine\Common\Cache\ApcuCache;
+}
+
 return [
+    'app.cache' => $cache,
+    'app.mscache' => $mscache,
     'app.siteName' => env('SITE_NAME', 'Mapa da Cultura Brasileira'),
     'app.siteDescription' => i::__("O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades"),
 

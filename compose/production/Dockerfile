@@ -11,5 +11,7 @@ COPY plugins /var/www/html/protected/application/plugins
 RUN curl https://raw.githubusercontent.com/opauth/facebook/master/FacebookStrategy.php > /var/www/html/protected/application/plugins/MultipleLocalAuth/Facebook/FacebookStrategy.php
 RUN chown -R www-data: /var/www/html/protected/application/plugins/AldirBlanc/importFiles/
 
+COPY compose/common/php-ini.d /usr/local/etc/php/conf.d
+
 COPY compose/common/config-csv-inciso1.php /var/www/html/protected/application/plugins/AldirBlancDataprev/config-csv-inciso1.php
 
