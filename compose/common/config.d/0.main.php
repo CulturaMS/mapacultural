@@ -9,12 +9,12 @@ use MapasCulturais\i;
 
 if (env('REDIS_CACHE', false)) {
     $redis = new \Redis();
-    $redis->connect(env('REDIS_CACHE'));
+    $redis->connect(env('REDIS_CACHE', false));
     $cache = new \Doctrine\Common\Cache\RedisCache;
     $cache->setRedis($redis);
     
     $redis = new \Redis();
-    $redis->connect(env('REDIS_CACHE'));
+    $redis->connect(env('REDIS_CACHE', false));
     $mscache = new \Doctrine\Common\Cache\RedisCache;
     $mscache->setRedis($redis);
 } else {
