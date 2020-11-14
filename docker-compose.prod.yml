@@ -43,7 +43,7 @@ services:
 #      - APP_LCODE=pt_BR,es_ES # para selecao do idioma baseado no navegador
       - APP_LCODE=pt_BR
       - APP_MODE=production
-      - ACTIVE_THEME=MapasComBr
+      - ACTIVE_THEME=MatoGrossoSul
       - PENDING_PCACHE_RECREATION_INTERVAL=10
       - CACHE_API=false
       
