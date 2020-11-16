@@ -61,10 +61,6 @@ return [
                 'msg_status_notapproved' => env('AB_STATUS_NOTAPPROVED_MESSAGE', 'Seu cadastro cultural foi analisado, mas não foi homologado.'), // STATUS_NOTAPPROVED = 3
                 'msg_status_waitlist' => env('AB_STATUS_WAITLIST_MESSAGE', 'Os recursos disponibilizados já foram destinados. Para sua solicitação ser aprovada será necessário aguardar possível liberação de recursos. Em caso de aprovação, você também será notificado por e-mail. Consulte novamente em outro momento.'), //STATUS_WAITLIST = 8
 
-                // informacoes para recurso das inscrições com status 2 e 3
-                'email_recurso' => env('AB_EMAIL_RECURSO', 'mapacultural@fcms.ms.gov.br'),
-                'msg_recurso' => env('AB_MENSAGEM_RECURSO', 'Conforme previsto pela portaria FCMS Nº 13/2020 que trata a respeito deste benefício, poderá o interessado cadastrado interpor recurso administrativo do resultado. O recurso deverá ser apresentado exclusivamente por e-mail (mapacultural@fcms.ms.gov.br), e deverá conter, minimamente: a. Identificação completa do interessado/recorrente; b. Documentos comprobatórios, quando cabíveis; c. Identificação do item controverso/recorrido; d. Razões que fundamentem o recurso; e. Os pedidos do recurso.'),
-
                 'inciso2' =>[
                     (object) ["owner" =>722, "city" => "Amambai"],
                     (object) ["owner" =>724, "city" => "Aparecida do Taboado-MS"],
@@ -109,7 +105,7 @@ return [
 
             ],
         ],
-        
+
         // 'AldirBlancRedirects' => [
         //     'namespace' => 'AldirBlancRedirects',
         //     'config' => [
