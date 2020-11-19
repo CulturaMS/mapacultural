@@ -1,0 +1,59 @@
+
+// Home
+body #home-intro,
+body #home-events,
+body #home-agents,
+body #home-spaces,
+body #home-projects,
+body #home-opportunities,
+body #home-developers {
+    background-size: cover;
+    box-sizing: border-box;
+    min-height: calc(100vh);
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    width: 100%;
+}
+
+body #home-intro {
+    background: #1c5690 url(../img/home-intro.jpg) no-repeat center;
+    background-size: cover;
+}
+
+body #home-events {
+    background: #1c5690 url(../img/home-events.jpg) no-repeat center;
+    background-size: cover;
+}
+
+body #home-agents {
+    background: #1dabc6 url(../img/home-agents.jpg) no-repeat center;
+    background-size: cover;
+}
+
+body #home-spaces {
+    background: #e83f96 url(../img/home-spaces.jpg) no-repeat center;
+    background-size: cover;
+}
+
+body #home-projects {
+    background: #e83f96 url(../img/home-projects.jpg) no-repeat center;
+    background-size: cover;
+}
+
+body #home-opportunities {
+    background: #e83f96 url(../img/home-opportunities.jpg) no-repeat center;
+    background-size: cover;
+}
+
+body #home-developers {
+    background: #9966cc url(../img/home-developers.jpg) no-repeat center;
+    background-size: cover;
+    a {
+        color: #fff;
+    }
+}
+
+// Header Mapas
+header #organization-logo img {
+    margin-top: 5px;
+}

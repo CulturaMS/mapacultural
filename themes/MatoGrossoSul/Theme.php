@@ -51,8 +51,16 @@ Além de conferir a agenda de eventos, você também pode colaborar na gestão d
 
     protected function _publishAssets() {
 
-        // $this->jsObject['assets']['logo-instituicao'] = $this->asset('img/logo-instituicao.png', false);
+        $this->asset('img/home-intro.jpg', false);
+        $this->asset('img/home-events.jpg', false);
+        $this->asset('img/home-agents.jpg', false);
+        $this->asset('img/home-spaces.jpg', false);
+        $this->asset('img/home-projects.jpg', false);
+        $this->asset('img/home-opportunities.jpg', false);
+        $this->asset('img/home-developers.jpg', false);
+        $this->asset('img/share.png', false);
 
+        // $this->jsObject['assets']['logo-instituicao'] = $this->asset('img/logo-instituicao.png', false);
         // $this->enqueueScript('app', 'hide-fields', 'js/hide-fields.js');
     }
 
