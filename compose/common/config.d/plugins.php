@@ -43,6 +43,7 @@ return [
                 //     'med@inc1.com.br'=> [37],
                 // ],
                 // 'lista_mediadores' =>  (array) json_decode(env('AB_LISTA_MEDIADORES', '["med@inc1.com.br"]')),
+                'mediadores_prolongar_tempo' => false,
 
                 // define os ids para dataprev e avaliadores genericos
                 'avaliadores_dataprev_user_id' => (array) json_decode(env('AB_AVALIADORES_DATAPREV_USER_ID', '["835"]')),
