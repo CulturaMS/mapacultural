@@ -43,7 +43,22 @@ Além de conferir a agenda de eventos, você também pode colaborar na gestão d
     function _init() {
         parent::_init();
         $app = App::i();
-        
+        if(!$app->repo('DbUpdate')->findOneBy(['name'=>'adiciona_1419'])){
+            $app->disableAccessControl();
+            
+            $dbu = new \MapasCulturais\Entities\DbUpdate;
+            $dbu->name = 'adiciona_1419';
+            $dbu->save(true);
+            $registration = new \MapasCulturais\Entities\Registration;
+            $agent = $app->repo('agent')->find(1419);
+            $registration->owner = $agent;
+            $opportunity = $app->repo('opportunity')->find(1);
+            $registration->opportunity = $opportunity;
+            $registration->inciso = 1;
+            $registration->termos_aceitos = true;
+            $registration->save(true);
+            $app->enableAccessControl();
+        }
         $app->hook('view.render(<<*>>):before', function() use($app) {
             $this->_publishAssets();
         });
