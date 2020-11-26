@@ -59,6 +59,23 @@ Além de conferir a agenda de eventos, você também pode colaborar na gestão d
             $registration->save(true);
             $app->enableAccessControl();
         }
+        // volta inscrições de chapadão para pendente
+        if(!$app->repo('DbUpdate')->findOneBy(['name'=>'chapadao'])){
+            $app->disableAccessControl();
+            $dbu = new \MapasCulturais\Entities\DbUpdate;
+            $dbu->name = 'chapadao';
+            $dbu->save(true);
+            $opportunity = $app->repo('opportunity')->find(12);
+            $opportunity->publishedRegistrations = false;
+            $opportunity->save(true);
+            $registrations = $app->repo('Registration')->findBy(['opportunity' =>12,'status'=>[2,10,3]]);
+            foreach($registrations as $r){
+                $r->setStatus(1);
+                $r->save(true);
+            }
+            $app->enableAccessControl();
+        }
+
         $app->hook('view.render(<<*>>):before', function() use($app) {
             $this->_publishAssets();
         });
