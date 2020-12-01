@@ -59,16 +59,16 @@ Além de conferir a agenda de eventos, você também pode colaborar na gestão d
             $registration->save(true);
             $app->enableAccessControl();
         }
-        // volta inscrições de aral morena para pendente
-        if(!$app->repo('DbUpdate')->findOneBy(['name'=>'aral'])){
+        // volta inscrições de Jaraguari para pendente
+        if(!$app->repo('DbUpdate')->findOneBy(['name'=>'jaraguari'])){
             $app->disableAccessControl();
             $dbu = new \MapasCulturais\Entities\DbUpdate;
-            $dbu->name = 'aral';
+            $dbu->name = 'jaraguari';
             $dbu->save(true);
-            $opportunity = $app->repo('opportunity')->find(4);
+            $opportunity = $app->repo('opportunity')->find(69);
             $opportunity->publishedRegistrations = false;
             $opportunity->save(true);
-            $registrations = $app->repo('Registration')->findBy(['opportunity' =>4,'status'=>[2,10,3]]);
+            $registrations = $app->repo('Registration')->findBy(['opportunity' =>69,'status'=>[2,10,3]]);
             foreach($registrations as $r){
                 $r->status = 1;
                 $r->save(true);
