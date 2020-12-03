@@ -15,6 +15,7 @@ services:
       - ../compose/common/config.d:/var/www/html/protected/application/conf/conf-common.d
       - ../compose/local/config.d:/var/www/html/protected/application/conf/config.d
       - ../compose/commom/config-csv-inciso1.php:/var/www/html/protected/application/plugins/AldirBlancDataprev/config-csv-inciso1.php
+      - ../compose/commom/config-csv-inciso2.php:/var/www/html/protected/application/plugins/AldirBlancDataprev/config-csv-inciso2.php
       # themes and plugins
       ##- ../themes/MapasComBr:/var/www/html/protected/application/themes/MapasComBr
       - ../themes/MatoGrossoSul:/var/www/html/protected/application/themes/MatoGrossoSul

@@ -14,4 +14,5 @@ RUN chown -R www-data: /var/www/html/protected/application/plugins/AldirBlanc/im
 COPY compose/common/php-ini.d /usr/local/etc/php/conf.d
 
 COPY compose/common/config-csv-inciso1.php /var/www/html/protected/application/plugins/AldirBlancDataprev/config-csv-inciso1.php
+COPY compose/common/config-csv-inciso2.php /var/www/html/protected/application/plugins/AldirBlancDataprev/config-csv-inciso2.php
 
