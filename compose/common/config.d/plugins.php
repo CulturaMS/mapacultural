@@ -108,55 +108,56 @@ return [
                 ]
 
             ],
-        ],
-
-        // 'AldirBlancRedirects' => [
-        //     'namespace' => 'AldirBlancRedirects',
-        //     'config' => [
-        //         'condition' => function() {
-        //             $app = MapasCulturais\App::i();
-
-        //             if($app->user->is('guest')){
-        //                 return false;
-        //             }
-
-        //             $plugin = $app->plugins['AldirBlanc'];
-
-        //             // só pode acessar as demais urls quem tiver controle sobre o agente da SECULT
-        //             $opportunities_ids = array_values($plugin->config['inciso2_opportunity_ids']);
-        //             $opportunities_ids[] = $plugin->config['inciso1_opportunity_id'];
-
-        //             $opportunities = $app->repo('Opportunity')->findBy(['id' => $opportunities_ids]);
-                    
-        //             $evaluation_method_configurations = [];
-
-        //             foreach($opportunities as $opportunity) {
-        //                 $evaluation_method_configurations[] = $opportunity->evaluationMethodConfiguration;
-                        
-        //                 if($opportunity->canUser('@control') || $opportunity->canUser('viewEvaluations') || $opportunity->canUser('evaluateRegistrations')) {
-        //                     return true;
-        //                 }
-        //             }
-
-        //             foreach ($evaluation_method_configurations as $emc) {
-        //                 $param = [
-        //                     'originType' => 'MapasCulturais\Entities\EvaluationMethodConfiguration',
-        //                     'originId' => $emc->id, 
-        //                     'destinationType' => 'MapasCulturais\Entities\Agent',
-        //                     'destinationId' => $app->user->profile->id,
-        //                 ];
-
-        //                 if($request = $app->repo('RequestAgentRelation')->findOneBy($param)) {
-        //                     return true;
-        //                 }
-        //             }
-        //             return false;
-        //         }
-        //     ]
-        // ],
-
+        ],,
         'AldirBlancDataprev' => [
             'namespace' => 'AldirBlancDataprev',
+            'config' => [
+                'consolidacao_requer_validacoes' => ['financeiro']
+            ],
         ],
+        
+        'Recursos' => ['namespace' => 'AldirBlancValidadorRecurso'],
+        
+        'Financeiro' => [
+            'namespace' => 'AldirBlancValidadorFinanceiro',
+            'config' => [
+                'exportador_requer_validacao' => ['dataprev'],
+                'consolidacao_requer_homologacao' => false,
+                'consolidacao_requer_validacoes' => []
+            ],
+        ],
+
+        'RegistrationPayments' => [ 'namespace' => 'RegistrationPayments' ],
+
+        'FCMS' => [
+            'namespace' => 'AldirBlancValidador',
+            'config' => [
+                // slug utilizado como id do controller e identificador do validador
+                'slug' => 'fcms',
+
+                // nome apresentado na interface
+                'name' => 'FCMS',
+
+                'forcar_resultado' => true,
+
+                'consolidacao_requer_homologacao' => false,
+
+                // indica que só deve exportar as inscrições já homologadas
+                'exportador_requer_homologacao' => true,
+
+                // indica que a exportação não requer nenhuma validação
+                'exportador_requer_validacao' => [],
+
+                // indica que só deve consolidar o resultado se a inscrição
+                // já tiver sido processada pelo Dataprev
+                'consolidacao_requer_validacoes' => [],
+
+                'inciso1' => [
+                    'AVALIACAO' => function ($registration, $key) {
+                        return $registration->consolidatedResult;
+                    }
+                ],
+            ]
+        ]
     ]
 ];
