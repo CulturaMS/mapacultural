@@ -108,7 +108,7 @@ return [
                 ]
 
             ],
-        ],,
+        ],
         'AldirBlancDataprev' => [
             'namespace' => 'AldirBlancDataprev',
             'config' => [
