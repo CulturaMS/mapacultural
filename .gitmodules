@@ -10,3 +10,15 @@
 [submodule "plugins/AldirBlancDataprev"]
 	path = plugins/AldirBlancDataprev
 	url = https://github.com/mapasculturais/plugin-AldirBlancDataprev.git
+[submodule "plugins/AldirBlancValidadorFinanceiro"]
+	path = plugins/AldirBlancValidadorFinanceiro
+	url = https://github.com/mapasculturais/plugin-AldirBlancValidadorFinanceiro
+[submodule "plugins/RegistrationPayments"]
+	path = plugins/RegistrationPayments
+	url = https://github.com/mapasculturais/plugin-RegistrationPayments
+[submodule "plugins/AldirBlancValidador"]
+	path = plugins/AldirBlancValidador
+	url = https://github.com/mapasculturais/plugin-AldirBlancValidador
+[submodule "plugins/AldirBlancValidadorRecurso"]
+	path = plugins/AldirBlancValidadorRecurso
+	url = https://github.com/mapasculturais/plugin-AldirBlancValidadorRecurso
