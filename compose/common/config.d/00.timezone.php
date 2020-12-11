@@ -1,3 +1,3 @@
 <?php
-date_default_timezone_set('America/Campo_Grande');
+date_default_timezone_set('America/Manaus');
 return [];
