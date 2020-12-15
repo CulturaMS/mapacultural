@@ -57,8 +57,8 @@ return [
 
                 // mensagens de status padrao
                 'msg_status_sent' => env('AB_STATUS_SENT_MESSAGE', 'Consulte novamente em outro momento.'), // STATUS_SENT = 1
-                'msg_status_invalid' => env('AB_STATUS_INVALID_MESSAGE', 'Sua solicitação foi analisada e homologada pela equipe da FCMS, mas invalidada pelo Dataprev.'), // STATUS_INVALID = 2
-                'msg_status_approved' => env('AB_STATUS_APPROVED_MESSAGE', 'Seu cadastro foi analisado, homologado e validado pelo sistema Dataprev. Aguardando o pagamento do benefício.'), // STATUS_APPROVED = 10
+                'msg_status_invalid' => env('AB_STATUS_INVALID_MESSAGE', 'Seu cadastro cultural foi analisado e homologado pelo órgão gestor de cultura responsável, mas a solicitação do benefício foi invalidada.'), // STATUS_INVALID = 2
+                'msg_status_approved' => env('AB_STATUS_APPROVED_MESSAGE', 'Seu cadastro cultural foi analisado e homologado pelo órgão gestor de cultura responsável, e a solicitação do benefício validada. Aguardando o pagamento do benefício.'), // STATUS_APPROVED = 10
                 'msg_status_notapproved' => env('AB_STATUS_NOTAPPROVED_MESSAGE', 'Seu cadastro cultural foi analisado, mas não foi homologado.'), // STATUS_NOTAPPROVED = 3
                 'msg_status_waitlist' => env('AB_STATUS_WAITLIST_MESSAGE', 'Os recursos disponibilizados já foram destinados. Para sua solicitação ser aprovada será necessário aguardar possível liberação de recursos. Em caso de aprovação, você também será notificado por e-mail. Consulte novamente em outro momento.'), //STATUS_WAITLIST = 8
 
