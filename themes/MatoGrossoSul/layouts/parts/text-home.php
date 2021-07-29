@@ -11,6 +11,7 @@ tenham acesso ao apoio financeiro emergencial de R$ 1.800,00 (mil e oitocentos r
 </p>
 
 <div style="text-align: center;">
+    <p>Acesse os critérios para a concessão do benefício <strong><a style="color:#fff" target="_blank" href="https://www.fundacaodecultura.ms.gov.br/ms-cultura-cidada/">clicando aqui</a></strong>.</p>
     <h3>Inscrições em breve !</h3>
     <br><br>
 </div>
