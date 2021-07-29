@@ -1,4 +1,3 @@
-<h3>MS Cultura Cidadã</h3>
 <p>O Programa “MS Cultura Cidadã, instituído pela Lei Estadual 5.688, de 7 de julho de 2021 e regulamentado pelo Decreto Nº 15.728, de 14 de julho de 2021, 
 integra o pacote de apoio do governo estadual “Retomada MS”, e prevê o uso de até R$ 3.230.000,00 (três milhões, duzentos e trinta mil reais), para concessão
 de apoio financeiro emergencial aos trabalhadores da cultura atingidos por restrições econômicas durante a pandemia da Covid-19.</p>
