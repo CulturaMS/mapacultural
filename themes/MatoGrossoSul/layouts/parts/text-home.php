@@ -3,8 +3,7 @@ integra o pacote de apoio do governo estadual “Retomada MS”, e prevê o uso 
 de apoio financeiro emergencial aos trabalhadores da cultura atingidos por restrições econômicas durante a pandemia da Covid-19.</p>
 
 <p>
-O apoio financeiro vai possibilitar que cerca de 1800 trabalhadores da cultura sul-mato-grossense, entre artistas, contadores de histórias, 
-produtores, técnicos, curadores, oficineiros, professores de escolas de artes e capoeira, designers de moda, entre outros profissionais da cultura estadual, 
+O Programa possibilitará que cerca de 1800 trabalhadores da cultura sul-mato-grossense, dentre artistas, contadores de histórias, produtores, técnicos, curadores, oficineiros, professores de escolas de artes e capoeira, designers de moda, dentre outros profissionais da cultura estadual, 
 tenham acesso ao apoio financeiro emergencial de R$ 1.800,00 (mil e oitocentos reais), a ser pago em 3 (três) parcelas mensais  no valor de R$ 600,00 
 (seiscentos reais) cada, limitado a um membro por  unidade familiar.
 
