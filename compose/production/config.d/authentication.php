@@ -12,7 +12,7 @@ return [
         'salt' => env('AUTH_SALT', null),
         'timeout' => env('AUTH_TIMEOUT', '24 hours'),
         "urlSupportSite" => 'https://www.fundacaodecultura.ms.gov.br/lei-aldir-blanc/',
-
+        'statusCreateAgent' => env('STATUS_CREATE_AGENT', Agent::STATUS_DRAFT),
         'urlSupportEmail' => 'suporte.mapacultural.ms@gmail.com',
         'urlImageToUseInEmails' => 'https://www.mapacultural.ms.gov.br/assets/aldirblanc/img/logo-aldir-blanc.png',
         'urlTermsOfUse' => 'https://www.mapacultural.ms.gov.br/files/opportunity/1/termo_de_uso_-_mapa_cultural_de_ms.pdf',
