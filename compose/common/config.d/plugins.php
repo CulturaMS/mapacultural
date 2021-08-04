@@ -184,17 +184,31 @@ return [
         'StreamlinedOpportunity' => [ 
             'namespace' => 'StreamlinedOpportunity',
             'config' => [
-                'enabled_plugin' => env("ENABLED_STREAM_LINED_OPPORTUNITY", true), // true habilita o plugin false desabilita
+                 // true habilita o plugin false desabilita
+                'enabled_plugin' => env("ENABLED_STREAM_LINED_OPPORTUNITY", true),
+
                 'text_home' => [
-                    'enabled' => env("ENABLED_TEXT_HOME", true), // true para usar um texto acima do formulário de pesquisa da home
-                    'use_part' => env("USE_PART", true), //true para usar um template part ou false para usar diretamente texto da configuração
-                    'text_or_part' => env("TEXT_OR_PART", "text-home") // Nome do template part ou texto que sera usado
+                    // true para usar um texto acima do formulário de pesquisa da home
+                    'enabled' => env("ENABLED_TEXT_HOME", true), 
+
+                    //true para usar um template part ou false para usar diretamente texto da configuração
+                    'use_part' => env("USE_PART", true), 
+
+                    // Nome do template part ou texto que sera usado
+                    'text_or_part' => env("TEXT_OR_PART", "text-home") 
                 ],
                 'img_home' => [
-                    'enabled' => env("ENABLED_IMG_HOME", true), // true para usar uma imagem acima do texto que será inserido na home
-                    'use_part' => env("USE_PART_IMG", false),  //true para usar um template part ou false para usar diretamente o caminho de uma imagem
-                    'patch_or_part' => env("PATCH_OR_PART", "img/logo_ms_Cultura_cidada.png"), // Nome do template part ou caminho da imagem que sera usada
-                    'styles_class' => env("STYLES_CLASS", "streamlinedopportunity"), // Seta os styles a serem aplicados
+                    // true para usar uma imagem acima do texto que será inserido na home
+                    'enabled' => env("ENABLED_IMG_HOME", true), 
+
+                    //true para usar um template part ou false para usar diretamente o caminho de uma imagem
+                    'use_part' => env("USE_PART_IMG", false),  
+
+                    // Nome do template part ou caminho da imagem que sera usada
+                    'patch_or_part' => env("PATCH_OR_PART", "img/logo_ms_Cultura_cidada.png"), 
+
+                    // Seta os styles a serem aplicados
+                    'styles_class' => env("STYLES_CLASS", "streamlinedopportunity"), 
                 ]
             ]
         ],
