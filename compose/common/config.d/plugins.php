@@ -181,7 +181,7 @@ return [
                 ],
             ]
         ],
-        'StreamlinedOpportunity' => [ 
+        'StreamlinedOpportunity' => [
             'namespace' => 'StreamlinedOpportunity',
             'config' => [
                  // true habilita o plugin false desabilita
@@ -189,26 +189,44 @@ return [
 
                 'text_home' => [
                     // true para usar um texto acima do formulário de pesquisa da home
-                    'enabled' => env("ENABLED_TEXT_HOME", true), 
+                    'enabled' => env("ENABLED_TEXT_HOME", true),
 
                     //true para usar um template part ou false para usar diretamente texto da configuração
-                    'use_part' => env("USE_PART", true), 
+                    'use_part' => env("USE_PART", true),
 
                     // Nome do template part ou texto que sera usado
-                    'text_or_part' => env("TEXT_OR_PART", "text-home") 
+                    'text_or_part' => env("TEXT_OR_PART", "text-home")
                 ],
                 'img_home' => [
                     // true para usar uma imagem acima do texto que será inserido na home
-                    'enabled' => env("ENABLED_IMG_HOME", true), 
+                    'enabled' => env("ENABLED_IMG_HOME", true),
 
                     //true para usar um template part ou false para usar diretamente o caminho de uma imagem
-                    'use_part' => env("USE_PART_IMG", false),  
+                    'use_part' => env("USE_PART_IMG", false),
 
                     // Nome do template part ou caminho da imagem que sera usada
-                    'patch_or_part' => env("PATCH_OR_PART", "img/logo_ms_Cultura_cidada.png"), 
+                    'patch_or_part' => env("PATCH_OR_PART", "img/logo_ms_Cultura_cidada.png"),
 
                     // Seta os styles a serem aplicados
-                    'styles_class' => env("STYLES_CLASS", "streamlinedopportunity"), 
+                    'styles_class' => env("STYLES_CLASS", "streamlinedopportunity"),
+                ],
+                "terms" => [
+                    "intro" => \MapasCulturais\i::__("Para ser beneficiário do Programa “MS Cultura Cidadã”, o trabalhador da cultura deverá preencher, cumulativamente, os requisitos de elegibilidade a serem documentalmente comprovados no ato da inscrição, conforme previsto no Art. 2º da Lei Estadual nº 5.688, de 7 de julho de 2021 e Art. 9º do Decreto Estadual nº 15.728, de 14 de julho de 2021, e, conjuntamente, não poderá apresentar quaisquer das condições impeditivas previstas no Art. 3º da Lei Estadual.", "streamlined-opportunity"),
+                    "title" => \MapasCulturais\i::__("Termos e Condições", "streamlined-opportunity"),
+                    "items" => [
+                        \MapasCulturais\i::__("DECLARO SER RESIDENTE NO ESTADO DE MATO GROSSO DO SUL, CONFORME INCISO I DO ART. 2º DA LEI ESTADUAL Nº 5.688/2021, E ARTIGO 9º, INCISO II DO DECRETO ESTADUAL Nº 15.728/2021.", "streamlined-opportunity"),
+                        \MapasCulturais\i::__("DECLARO TER PARTICIPADO DA CADEIA PRODUTIVA DOS SEGMENTOS ARTÍSTICOS E CULTURAIS DO ESTADO DE MATO GROSSO DO SUL NOS 24 (VINTE E QUATRO) MESES IMEDIATAMENTE ANTERIORES À 19 DE MARÇO DE 2020, DATA DA EDIÇÃO DO DECRETO ESTDUAL Nº 15.396, CONFORME INCISO II DO ART. 2º DA LEI ESTADUAL Nº 5.688/2021, E ARTIGO 9º, INCISO III DO DECRETO ESTADUAL Nº 15.728/2021.", "streamlined-opportunity"),
+                        \MapasCulturais\i::__("DECLARO QUE ESTOU CIENTE DE QUE, SERÁ CONCEDIDO APENAS 1 (UM) APOIO FINANCEIRO EMERGENCIAL POR FAMÍLIA, CONFORME ART. 1º, § 3º DA LEI Nº 5.688/2021 E ART. 9º, INCISO IV DO DECRETO Nº 15.728/2021.", "streamlined-opportunity"),
+                        \MapasCulturais\i::__("DECLARO QUE ESTOU CIENTE DE QUE, A PARTICIPAÇÃO NO PROGRAMA “MS CULTURA CIDADÃ” É CONDICIONADA À RENÚNCIA AO DIREITO DE FUTURA AÇÃO RELATIVA A EVENTUAIS INDENIZAÇÕES DECORRENTES DE MEDIDAS RESTRITIVAS IMPOSTAS EM RAZÃO DA EMERGÊNCIA EM SAÚDE PÚBLICA CAUSADA PELA PANDEMIA DO NOVO CORONAVÍRUS (COVID-19), BEM COMO À DESISTÊNCIA DE AÇÕES COM O MESMO TEOR JÁ PROPOSTAS EM FACE DO ESTADO, COM A CORRESPONDENTE RENÚNCIA AO DIREITO VEICULADO NA DEMANDA, CONFORME PARAGRAFO ÚNICO DO ART. 2º DA LEI ESTADUAL Nº 5.688/2021, E ARTIGO 9º, INCISO V DO DECRETO ESTADUAL Nº 15.728/2021.", "streamlined-opportunity"),
+                        \MapasCulturais\i::__("DECLARO QUE ESTOU CIENTE DE QUE, CASO A CONCESSÃO DO BENEFÍCIO DO PROGRAMA “MS CULTURA CIDADÃ” SEJA IMPEDITIVO AO ACESSO AOS BENEFÍCIOS SOCIAIS CONCEDIDOS PELA UNIÃO, DEVEREI OPTAR, EXPRESSAMENTE, PELA ADESÃO AO PROGRAMA “MS CULTURA CIDADÃ”, ASSUMINDO POR MINHA CONTA E RISCO, EVENTUAL EXCLUSÃO DA PARTICIPAÇÃO EM PROGRAMAS FEDERAIS OU RESTRIÇÃO DE ACESSO, CASO JÁ BENEFICIADO, CONFORME ART. 9º, §2º DO DECRETO ESTADUAL Nº 15.728/2021.", "streamlined-opportunity"),
+                        \MapasCulturais\i::__("DECLARO QUE NÃO POSSUO EMPREGO FORMAL ATIVO NA INICIATIVA PRIVADA, COM CONTRATO DE TRABALHO FORMALIZADO NOS TERMOS DA CONSOLIDAÇÃO DAS LEIS DO TRABALHO, CONFORME O INCISO I DO ART. 3º DA LEI ESTADUAL Nº 5.688/2021, E O § 3º DO ART. 10 DO DECRETO ESTADUAL Nº 15.728/2021.", "streamlined-opportunity"),
+                        \MapasCulturais\i::__("DECLARO QUE NÃO SOU DETENTOR DE CARGO, EMPREGO OU FUNÇÃO PÚBLICOS, CONFORME INCISO II DO ART. 3º DA LEI ESTADUAL Nº 5.688/2021.", "streamlined-opportunity"),
+                        \MapasCulturais\i::__("DECLARO QUE NÃO SOU TITULAR DE BENEFÍCIO PREVIDENCIÁRIO, CONFORME INCISO III DO ART. 3º  DA LEI ESTADUAL Nº 5.688/2021.", "streamlined-opportunity"),
+                        \MapasCulturais\i::__("DECLARO QUE NÃO ESTOU RECEBENDO BENEFÍCIO DO SEGURO DESEMPREGO, CONFORME INCISO IV DO ART. 3º  DA LEI ESTADUAL Nº 5.688/2021.", "streamlined-opportunity"),
+                        \MapasCulturais\i::__("DECLARO QUE ESTOU CIENTE DE QUE, EM CASO DE UTILIZAÇÃO DE QUALQUER MEIO ILÍCITO, IMORAL OU DECLARAÇÃO FALSA PARA A PARTICIPAÇÃO DESTE CREDENCIAMENTO, INCORRO NA PENALIDADE PREVISTA NO ARTIGO 299 DO DECRETO LEI Nº 2.848, DE 07 DE DEZEMBRO DE 1940 (CÓDIGO PENAL), ALÉM DE ENSEJAR A ADOÇÃO DAS MEDIDAS CABÍVEIS, NAS ESFERAS ADMINISTRATIVA E JUDICIAL.", "streamlined-opportunity"),
+                        \MapasCulturais\i::__("DECLARO QUE ESTOU CIENTE DA CONCESSÃO DAS INFORMAÇÕES POR MIM DECLARADAS NESTE FORMULÁRIO PARA PESQUISA E VALIDAÇÃO EM OUTRAS BASES DE DADOS OFICIAIS.", "streamlined-opportunity")
+                    ],
+                    "help" => \MapasCulturais\i::__("Você precisa aceitar todos os termos para continuar com a inscrição no auxílio emergencial da cultura.", "streamlined-opportunity")
                 ]
             ]
         ],
