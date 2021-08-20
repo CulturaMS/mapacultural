@@ -253,6 +253,14 @@ return [
                     'title' => "Programa MS Cultura Cidadã formulário de inscrição"
                 ],
                 'msg_disabled' => "Inscrição já efetuada",
+
+                /*EMAIL DE CONFIRMAÇÃO DE INSCRIÇÃO */
+                "email_confirm_registration" => [
+                    'project_name' => "no MS Cultura cidadã",
+                    'status_title' => "Inscrição realizada com sucesso!",
+                    'url_image_body' => 'img/logo_ms_Cultura_cidada.png',
+                    'subject' => "Confirmação de cadastro MS Cultura cidadã"
+                ]
             ]
         ],
     ]
