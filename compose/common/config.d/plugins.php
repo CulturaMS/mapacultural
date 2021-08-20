@@ -181,13 +181,17 @@ return [
                 ],
             ]
         ],
-        'StreamlinedOpportunity' => [
+        'MS_CULTURA_CIDADA' => [
             'namespace' => 'StreamlinedOpportunity',
             'config' => [
+                'slug' => 'ms_cultura_cidada',
+                'opportunity_id' => 201,
+                'logo_institution' => 'img/logo-site.png',
+                'logo_center' => 'img/logo-mscc-140x60.png',
                  // true habilita o plugin false desabilita
                 'enabled_plugin' => env("ENABLED_STREAM_LINED_OPPORTUNITY", true),
 
-                'text_home' => [
+                'text_home_before_searsh' => [
                     // true para usar um texto acima do formulário de pesquisa da home
                     'enabled' => env("ENABLED_TEXT_HOME", true),
 
@@ -197,7 +201,7 @@ return [
                     // Nome do template part ou texto que sera usado
                     'text_or_part' => env("TEXT_OR_PART", "text-home")
                 ],
-                'img_home' => [
+                'img_home_before_searsh' => [
                     // true para usar uma imagem acima do texto que será inserido na home
                     'enabled' => env("ENABLED_IMG_HOME", true),
 
@@ -210,8 +214,9 @@ return [
                     // Seta os styles a serem aplicados
                     'styles_class' => env("STYLES_CLASS", "streamlinedopportunity"),
                 ],
+                /*TERMOS E CONDIÇÕES */
                 "terms" => [
-                    "intro" => \MapasCulturais\i::__("Para ser beneficiário do Programa “MS Cultura Cidadã”, o trabalhador da cultura deverá preencher, cumulativamente, os requisitos de elegibilidade a serem documentalmente comprovados no ato da inscrição, conforme previsto no Art. 2º da Lei Estadual nº 5.688, de 7 de julho de 2021 e Art. 9º do Decreto Estadual nº 15.728, de 14 de julho de 2021, e, conjuntamente, não poderá apresentar quaisquer das condições impeditivas previstas no Art. 3º da Lei Estadual.", "streamlined-opportunity"),
+                    "intro" => \MapasCulturais\i::__("Programa “MS Cultura Cidadã”"),
                     "title" => \MapasCulturais\i::__("Termos e Condições", "streamlined-opportunity"),
                     "items" => [
                         \MapasCulturais\i::__("DECLARO SER RESIDENTE NO ESTADO DE MATO GROSSO DO SUL, CONFORME INCISO I DO ART. 2º DA LEI ESTADUAL Nº 5.688/2021, E ARTIGO 9º, INCISO II DO DECRETO ESTADUAL Nº 15.728/2021.", "streamlined-opportunity"),
@@ -227,7 +232,18 @@ return [
                         \MapasCulturais\i::__("DECLARO QUE ESTOU CIENTE DA CONCESSÃO DAS INFORMAÇÕES POR MIM DECLARADAS NESTE FORMULÁRIO PARA PESQUISA E VALIDAÇÃO EM OUTRAS BASES DE DADOS OFICIAIS.", "streamlined-opportunity")
                     ],
                     "help" => \MapasCulturais\i::__("Você precisa aceitar todos os termos para continuar com a inscrição no auxílio emergencial da cultura.", "streamlined-opportunity")
-                ]
+                ],
+                /*TELA DE INSCRIÇÃO */
+                'registration_screen' => [
+                    'title' => "Para se inscrver clique no botão abaixo",
+                    'description' =>"Programa MS Cultura Cidadã",
+                    'long_description' => "Para ser beneficiário do Programa “MS Cultura Cidadã”, o trabalhador da cultura deverá preencher, cumulativamente, os requisitos de elegibilidade a serem documentalmente comprovados no ato da inscrição, conforme previsto no Art. 2º da Lei Estadual nº 5.688, de 7 de julho de 2021 e Art. 9º do Decreto Estadual nº 15.728, de 14 de julho de 2021, e, conjuntamente, não poderá apresentar quaisquer das condições impeditivas previstas no Art. 3º da Lei Estadual.", "streamlined-opportunity",
+                ],
+                /*TELA DO FORMULÁRIO */
+                'form_screen' => [
+                    'title' => "Programa MS Cultura Cidadã formulário de inscrição"
+                ],
+                'msg_disabled' => "Inscrição já efetuada",
             ]
         ],
     ]
