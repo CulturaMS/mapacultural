@@ -184,7 +184,7 @@ return [
         'MS_CULTURA_CIDADA' => [
             'namespace' => 'StreamlinedOpportunity',
             'config' => [
-                'slug' => 'ms_cultura_cidada',
+                'slug' => 'msculturacidada',
                 'opportunity_id' => 54,
                 'logo_institution' => 'img/logo-site.png',
                 'logo_center' => 'img/logo-mscc-140x60.png',
@@ -199,7 +199,16 @@ return [
                     'use_part' => env("USE_PART", true),
 
                     // Nome do template part ou texto que sera usado
-                    'text_or_part' => env("TEXT_OR_PART", "text-home")
+                    'text_or_part' => 'text-home',
+
+                     //Habilita um botão abaixo do texto
+                    'enabled_button' => true,
+
+                    //texto dentro do botão
+                    'text_buton' => 'Solicite seu auxilio',
+
+                    //Link que o botão deve acessar
+                    'link_buton' => 'msculturacidada/cadastro',
                 ],
                 'img_home_before_searsh' => [
                     // true para usar uma imagem acima do texto que será inserido na home
