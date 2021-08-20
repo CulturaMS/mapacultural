@@ -256,7 +256,7 @@ return [
 
                 /*EMAIL DE CONFIRMAÇÃO DE INSCRIÇÃO */
                 "email_confirm_registration" => [
-                    'project_name' => "no MS Cultura cidadã",
+                    'project_name' => "no programa MS Cultura cidadã",
                     'status_title' => "Inscrição realizada com sucesso!",
                     'url_image_body' => 'img/logo_ms_Cultura_cidada.png',
                     'subject' => "Confirmação de cadastro MS Cultura cidadã"
