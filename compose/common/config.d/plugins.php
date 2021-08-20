@@ -185,7 +185,7 @@ return [
             'namespace' => 'StreamlinedOpportunity',
             'config' => [
                 'slug' => 'ms_cultura_cidada',
-                'opportunity_id' => 201,
+                'opportunity_id' => 54,
                 'logo_institution' => 'img/logo-site.png',
                 'logo_center' => 'img/logo-mscc-140x60.png',
                  // true habilita o plugin false desabilita
