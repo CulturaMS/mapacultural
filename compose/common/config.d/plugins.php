@@ -245,7 +245,7 @@ return [
                 ],
                 /*TELA DE INSCRIÇÃO */
                 'registration_screen' => [
-                    'title' => "Para se inscrver clique no botão abaixo",
+                    'title' => "Para se inscrever clique no botão abaixo",
                     'description' =>"Programa MS Cultura Cidadã",
                     'long_description' => "Para ser beneficiário do Programa “MS Cultura Cidadã”, o trabalhador da cultura deverá preencher, cumulativamente, os requisitos de elegibilidade a serem documentalmente comprovados no ato da inscrição, conforme previsto no Art. 2º da Lei Estadual nº 5.688, de 7 de julho de 2021 e Art. 9º do Decreto Estadual nº 15.728, de 14 de julho de 2021, e, conjuntamente, não poderá apresentar quaisquer das condições impeditivas previstas no Art. 3º da Lei Estadual.", "streamlined-opportunity",
                 ],
