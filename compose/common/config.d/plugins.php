@@ -187,6 +187,7 @@ return [
                 'slug' => 'msculturacidada',
                 'opportunity_id' => 54,
                 'logo_institution' => 'img/logo-site.png',
+                'logo_footer' => 'img/logo-instituicao.png',
                 'logo_center' => 'img/logo-mscc-140x60.png',
                  // true habilita o plugin false desabilita
                 'enabled_plugin' => env("ENABLED_STREAM_LINED_OPPORTUNITY", true),
@@ -225,7 +226,7 @@ return [
                 ],
                 /*TERMOS E CONDIÇÕES */
                 "terms" => [
-                    "intro" => \MapasCulturais\i::__("Programa “MS Cultura Cidadã”"),
+                    "intro" => \MapasCulturais\i::__(""),
                     "title" => \MapasCulturais\i::__("Termos e Condições", "streamlined-opportunity"),
                     "items" => [
                         \MapasCulturais\i::__("DECLARO SER RESIDENTE NO ESTADO DE MATO GROSSO DO SUL, CONFORME INCISO I DO ART. 2º DA LEI ESTADUAL Nº 5.688/2021, E ARTIGO 9º, INCISO II DO DECRETO ESTADUAL Nº 15.728/2021.", "streamlined-opportunity"),
