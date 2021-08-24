@@ -25,3 +25,6 @@
 [submodule "plugins/StreamlinedOpportunity"]
 	path = plugins/StreamlinedOpportunity
 	url = https://github.com/mapasculturais/plugin-StreamlinedOpportunity.git
+[submodule "plugins/AbstractValidator"]
+	path = plugins/AbstractValidator
+	url = git@github.com:mapasculturais/plugin-AbstractValidator.git
