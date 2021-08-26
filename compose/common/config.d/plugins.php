@@ -253,7 +253,7 @@ return [
                 ],
                 /*TELA DO FORMULÁRIO */
                 'form_screen' => [
-                    'title' => "Programa MS Cultura Cidadã formulário de inscrição"
+                    'title' => "Formulário de inscrição"
                 ],
 
                 /*EMAIL DE CONFIRMAÇÃO DE INSCRIÇÃO */
