@@ -203,7 +203,7 @@ return [
                     'text' => \MapasCulturais\i::__("<p>O Programa “MS Cultura Cidadã”, instituído pela Lei nº 5.688, de 7 de julho de 2021 e regulamentado pelo Decreto nº 15.728, de 14 de julho de 2021, integra o pacote de apoio do governo estadual “Retomada MS”, e prevê o uso de até R$ 3.230.000,00 (três milhões, duzentos e trinta mil reais), para concessão de apoio financeiro emergencial aos trabalhadores da cultura atingidos por restrições econômicas durante a pandemia da Covid-19.</p> <p> O Programa possibilitará que cerca de 1800 trabalhadores da cultura sul-mato-grossense, dentre artistas,contadores de histórias, produtores, técnicos, curadores, oficineiros, professores de escolas de artes e capoeira, designers de moda, dentre outros profissionais da cultura estadual, tenham acesso ao apoio financeiro emergencial de R$ 1.800,00 (mil e oitocentos reais), a ser pago em 3 (três) parcelas mensais  no valor de R$ 600,00 (seiscentos reais) cada.</p>", "streamlined-opportunity"),
 
                      //Habilita um botão abaixo do texto
-                    'enabled_button' => false,
+                    'enabled_button' => env("MSCULTURACIDADA_ENABLED_BUTTON_BEFORE_SEARSH", false),
 
                     // Link que leva a documentação do edital
                     'link_documentation' => "https://www.fundacaodecultura.ms.gov.br/ms-cultura-cidada/",
