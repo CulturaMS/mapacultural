@@ -197,16 +197,31 @@ return [
                     'use_part' => true,
 
                     // Nome do template part ou texto que sera usado
-                    'text_or_part' => 'text-home',
+                    'template_part' => 'text-home',
+
+                    // Texto que será exibido
+                    'text' => \MapasCulturais\i::__("<p>O Programa “MS Cultura Cidadã”, instituído pela Lei nº 5.688, de 7 de julho de 2021 e regulamentado pelo Decreto nº 15.728, de 14 de julho de 2021, integra o pacote de apoio do governo estadual “Retomada MS”, e prevê o uso de até R$ 3.230.000,00 (três milhões, duzentos e trinta mil reais), para concessão de apoio financeiro emergencial aos trabalhadores da cultura atingidos por restrições econômicas durante a pandemia da Covid-19.</p> <p> O Programa possibilitará que cerca de 1800 trabalhadores da cultura sul-mato-grossense, dentre artistas,contadores de histórias, produtores, técnicos, curadores, oficineiros, professores de escolas de artes e capoeira, designers de moda, dentre outros profissionais da cultura estadual, tenham acesso ao apoio financeiro emergencial de R$ 1.800,00 (mil e oitocentos reais), a ser pago em 3 (três) parcelas mensais  no valor de R$ 600,00 (seiscentos reais) cada.</p>", "streamlined-opportunity"),
 
                      //Habilita um botão abaixo do texto
-                    'enabled_button' => true,
+                    'enabled_button' => false,
+
+                    // Link que leva a documentação do edital
+                    'link_documentation' => "https://www.fundacaodecultura.ms.gov.br/ms-cultura-cidada/",
+
+                    // Texto que contem o link da documentação do edital
+                    'text_link_documentation' => \MapasCulturais\i::__("clicando aqui", "streamlined-opportunity"),
+
+                    // Texto informativo ao lado do link
+                    'text_info_link_documentation' => \MapasCulturais\i::__("Acesse os critérios para a concessão do benefício", "streamlined-opportunity"),
 
                     //texto dentro do botão
-                    'text_buton' => \MapasCulturais\i::__("Solicite seu auxilio", "streamlined-opportunity"),
+                    'text_button' => env("MSCULTURACIDADA_TEXT_BUTTON_BEFORE_SEARSH", \MapasCulturais\i::__("Solicite seu auxilio", "streamlined-opportunity")) ,
 
                     //Link que o botão deve acessar
-                    'link_buton' => 'msculturacidada/cadastro',
+                    'link_button' => env("MSCULTURACIDADA_LINK_BUTTON_BEFORE_SEARSH",'msculturacidada/cadastro'),
+
+                    // Texto que será exibido no local do botão quando o mesmo esteja desabilitado
+                    'text_button_disabled' => env("MSCULTURACIDADA_TEXT_DISABLED_BUTTON_BEFORE_SEARSH",'Inscricoes em breve !'),
                 ],
                 'img_home_before_searsh' => [
                     // true para usar uma imagem acima do texto que será inserido na home
