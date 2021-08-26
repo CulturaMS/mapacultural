@@ -184,6 +184,7 @@ return [
         'MS_CULTURA_CIDADA' => [
             'namespace' => 'StreamlinedOpportunity',
             'config' => [
+                'enabled' => true,
                 'slug' => 'msculturacidada',
                 'logo_institution' => 'img/logo-site.png',
                 'logo_footer' => 'img/logo-instituicao.png',
