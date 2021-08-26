@@ -185,19 +185,16 @@ return [
             'namespace' => 'StreamlinedOpportunity',
             'config' => [
                 'slug' => 'msculturacidada',
-                'opportunity_id' => 54,
                 'logo_institution' => 'img/logo-site.png',
                 'logo_footer' => 'img/logo-instituicao.png',
                 'logo_center' => 'img/logo-mscc-140x60.png',
-                 // true habilita o plugin false desabilita
-                'enabled_plugin' => env("ENABLED_STREAM_LINED_OPPORTUNITY", true),
 
                 'text_home_before_searsh' => [
                     // true para usar um texto acima do formulário de pesquisa da home
-                    'enabled' => env("ENABLED_TEXT_HOME", true),
+                    'enabled' => true,
 
                     //true para usar um template part ou false para usar diretamente texto da configuração
-                    'use_part' => env("USE_PART", true),
+                    'use_part' => true,
 
                     // Nome do template part ou texto que sera usado
                     'text_or_part' => 'text-home',
@@ -206,23 +203,23 @@ return [
                     'enabled_button' => true,
 
                     //texto dentro do botão
-                    'text_buton' => 'Solicite seu auxilio',
+                    'text_buton' => \MapasCulturais\i::__("Solicite seu auxilio", "streamlined-opportunity"),
 
                     //Link que o botão deve acessar
                     'link_buton' => 'msculturacidada/cadastro',
                 ],
                 'img_home_before_searsh' => [
                     // true para usar uma imagem acima do texto que será inserido na home
-                    'enabled' => env("ENABLED_IMG_HOME", true),
+                    'enabled' => true,
 
                     //true para usar um template part ou false para usar diretamente o caminho de uma imagem
-                    'use_part' => env("USE_PART_IMG", false),
+                    'use_part' => false,
 
                     // Nome do template part ou caminho da imagem que sera usada
-                    'patch_or_part' => env("PATCH_OR_PART", "img/logo_ms_Cultura_cidada.png"),
+                    'patch_or_part' => "img/logo_ms_Cultura_cidada.png",
 
                     // Seta os styles a serem aplicados
-                    'styles_class' => env("STYLES_CLASS", "streamlinedopportunity"),
+                    'styles_class' => "streamlinedopportunity",
                 ],
                 /*TERMOS E CONDIÇÕES */
                 "terms" => [
@@ -246,22 +243,22 @@ return [
                 ],
                 /*TELA DE INSCRIÇÃO */
                 'registration_screen' => [
-                    'title' => "Para se inscrever clique no botão abaixo",
-                    'description' =>"Programa MS Cultura Cidadã",
-                    'long_description' => "Para ser beneficiário do Programa “MS Cultura Cidadã”, o trabalhador da cultura deverá preencher, cumulativamente, os requisitos de elegibilidade a serem documentalmente comprovados no ato da inscrição, conforme previsto no Art. 2º da Lei Estadual nº 5.688, de 7 de julho de 2021 e Art. 9º do Decreto Estadual nº 15.728, de 14 de julho de 2021, e, conjuntamente, não poderá apresentar quaisquer das condições impeditivas previstas no Art. 3º da Lei Estadual.", "streamlined-opportunity",
-                    'title_application_summary' => "Resumo da inscrição",
+                    'title' => \MapasCulturais\i::__("Para se inscrever clique no botão abaixo", "streamlined-opportunity"),
+                    'description' => \MapasCulturais\i::__("Programa MS Cultura Cidadã", "streamlined-opportunity"),
+                    'long_description' => \MapasCulturais\i::__("Para ser beneficiário do Programa “MS Cultura Cidadã”, o trabalhador da cultura deverá preencher, cumulativamente, os requisitos de elegibilidade a serem documentalmente comprovados no ato da inscrição, conforme previsto no Art. 2º da Lei Estadual nº 5.688, de 7 de julho de 2021 e Art. 9º do Decreto Estadual nº 15.728, de 14 de julho de 2021, e, conjuntamente, não poderá apresentar quaisquer das condições impeditivas previstas no Art. 3º da Lei Estadual.", "streamlined-opportunity"), 
+                    'title_application_summary' => \MapasCulturais\i::__("Resumo da inscrição", "streamlined-opportunity"),
                 ],
                 /*TELA DO FORMULÁRIO */
                 'form_screen' => [
-                    'title' => "Formulário de inscrição"
+                    'title' => \MapasCulturais\i::__("Formulário de inscrição", "streamlined-opportunity")
                 ],
 
                 /*EMAIL DE CONFIRMAÇÃO DE INSCRIÇÃO */
                 "email_confirm_registration" => [
-                    'project_name' => "no programa MS Cultura cidadã",
-                    'status_title' => "Inscrição realizada com sucesso!",
+                    'project_name' => \MapasCulturais\i::__("no programa MS Cultura cidadã", "streamlined-opportunity"),
+                    'status_title' => \MapasCulturais\i::__("Inscrição realizada com sucesso!", "streamlined-opportunity"),
                     'url_image_body' => 'img/logo_ms_Cultura_cidada.png',
-                    'subject' => "Confirmação de cadastro MS Cultura cidadã"
+                    'subject' => \MapasCulturais\i::__("Confirmação de cadastro MS Cultura cidadã", "streamlined-opportunity"),
                 ]
             ]
         ],
