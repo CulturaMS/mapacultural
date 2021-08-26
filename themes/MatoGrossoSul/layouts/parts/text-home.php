@@ -21,9 +21,9 @@ designers de moda, dentre outros profissionais da cultura estadual, tenham acess
 <div style="text-align: center;">
     <p>Acesse os critérios para a concessão do benefício <strong><a style="color:#fff" target="_blank" href="https://www.fundacaodecultura.ms.gov.br/ms-cultura-cidada/">clicando aqui</a></strong>.</p>
     <?php if($enabled_button){ ?>
-    <a class="btn btn-accent btn-large" href="<?=$link_buton?>"><?=$text_buton?></a>
+    <a class="btn btn-accent btn-large" href="<?=$link_button?>"><?=$text_button?></a>
     <?php }else{ ?>
-        <h3>Inscrições em breve !</h3>
+        <h3><?=$text_button_disabled?></h3>
     <?php } ?>
     <br><br>
 </div>
