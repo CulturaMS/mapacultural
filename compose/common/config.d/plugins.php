@@ -189,6 +189,8 @@ return [
                 'logo_institution' => 'img/logo-site.png',
                 'logo_footer' => 'img/logo-instituicao.png',
                 'logo_center' => 'img/logo-mscc-140x60.png',
+                'text_button_status' => "Consulte o status da inscrição",
+                'text_link_button_status' => "clicando aqui",
 
                 'text_home_before_searsh' => [
                     // true para usar um texto acima do formulário de pesquisa da home
