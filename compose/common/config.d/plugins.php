@@ -186,7 +186,7 @@ return [
             'config' => [
                 'enabled_plugin' => true,
                 'slug' => 'msculturacidada',
-                'opportunity_id' => 137,
+                'opportunity_id' => env("MSCULTURACIDADA_OPPOTUNITY_ID", 137),
                 'logo_institution' => 'img/logo-site.png',
                 'logo_footer' => 'img/logo-instituicao.png',
                 'logo_center' => 'img/logo-mscc-140x60.png',
