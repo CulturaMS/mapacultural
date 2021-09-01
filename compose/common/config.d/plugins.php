@@ -282,5 +282,18 @@ return [
                 ]
             ]
         ],
+        "AbstractValidator" => [
+            "namespace" => "AbstractValidator",
+            "config" => []
+        ],
+        'AppealValidatorMsCulturaCidada' => [
+            "namespace" => "AppealValidator",
+            "config" => [
+                "is_opportunity_managed_handler" => function ($opportunity) {
+                    return ($opportunity->id == env("MSCULTURACIDADA_APPEAL_OPPOTUNITY_ID", 137));
+                },
+            
+            ]
+        ]
     ]
 ];
