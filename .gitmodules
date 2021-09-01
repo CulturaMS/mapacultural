@@ -30,4 +30,4 @@
 	url = https://github.com/mapasculturais/plugin-AbstractValidator.git
 [submodule "plugins/AppealValidator"]
 	path = plugins/AppealValidator
-	url = git@github.com:mapasculturais/plugin-AppealValidator.git
+	url = https://github.com/mapasculturais/plugin-AppealValidator.git
