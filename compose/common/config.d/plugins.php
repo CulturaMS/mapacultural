@@ -312,7 +312,7 @@ return [
                 "name" => "Validador SISGED",
                 'slug' => "sisgedvalidador",                
                 'is_opportunity_managed_handler' => function ($opportunity) {
-                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_FUNTRAB_OPPOTUNITY_ID", 137));
+                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_SISGED_OPPOTUNITY_ID", 137));
                 },
             ]
         ],
@@ -322,7 +322,7 @@ return [
                 "name" => "Validador CONSELHEIROS",
                 'slug' => "conselheirosvalidador",                
                 'is_opportunity_managed_handler' => function ($opportunity) {
-                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_FUNTRAB_OPPOTUNITY_ID", 137));
+                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_CONSELHEIROS_OPPOTUNITY_ID", 137));
                 },
             ]
         ],          
