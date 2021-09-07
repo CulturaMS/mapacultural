@@ -193,6 +193,7 @@ return [
                 'text_button_status' => "Consulte o status da inscrição",
                 'text_link_button_status' => "clicando aqui",
                 'schedule_datetime' => '2021-08-30 9:00:00',
+                'consolidation_requires_validations' => ['funtrabvalidador', 'sisgedvalidador', 'conselheirosvalidador'],
                
                 'text_home_before_search' => [
                     // true para usar um texto acima do formulário de pesquisa da home
@@ -294,6 +295,36 @@ return [
                 },
             
             ]
-        ]
+        ],
+        "FUNTRAB" => [
+            "namespace" => "GenericValidator",
+            "config" => [
+                "name" => "Validador FUNTRAB",
+                'slug' => "funtrabvalidador",                
+                'is_opportunity_managed_handler' => function ($opportunity) {
+                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_FUNTRAB_OPPOTUNITY_ID", 137));
+                },
+            ]
+        ],
+        "SISGED" => [
+            "namespace" => "GenericValidator",
+            "config" => [
+                "name" => "Validador SISGED",
+                'slug' => "sisgedvalidador",                
+                'is_opportunity_managed_handler' => function ($opportunity) {
+                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_FUNTRAB_OPPOTUNITY_ID", 137));
+                },
+            ]
+        ],
+        "CONSELHEIROS" => [
+            "namespace" => "GenericValidator",
+            "config" => [
+                "name" => "Validador CONSELHEIROS",
+                'slug' => "conselheirosvalidador",                
+                'is_opportunity_managed_handler' => function ($opportunity) {
+                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_FUNTRAB_OPPOTUNITY_ID", 137));
+                },
+            ]
+        ],          
     ]
 ];
