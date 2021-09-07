@@ -31,3 +31,6 @@
 [submodule "plugins/AppealValidator"]
 	path = plugins/AppealValidator
 	url = https://github.com/mapasculturais/plugin-AppealValidator.git
+[submodule "plugins/GenericValidator"]
+	path = plugins/GenericValidator
+	url = https://github.com/mapasculturais/plugin-GenericValidator.git
