@@ -1,5 +1,5 @@
 <?php
-return [
+$config_plugin = [
     'plugins' => [
         'EvaluationMethodTechnical' => ['namespace' => 'EvaluationMethodTechnical'],
         'EvaluationMethodSimple' => ['namespace' => 'EvaluationMethodSimple'],
@@ -360,6 +360,15 @@ return [
                     return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_CONSELHEIROS_OPPOTUNITY_ID", 137));
                 },
             ]
-        ],          
+        ],
+        "MapasNetwork" => [
+            "namespace" => "MapasNetwork",
+        ]             
     ]
 ];
+
+if(!env("MAPAS_NETWORK_ENABLED", false)){
+    unset($config_plugin['plugins']['MapasNetwork']);
+}
+
+return $config_plugin;
