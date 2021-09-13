@@ -36,4 +36,4 @@
 	url = https://github.com/mapasculturais/plugin-GenericValidator.git
 [submodule "plugins/MapasNetwork"]
 	path = plugins/MapasNetwork
-	url = git@github.com:mapasculturais/plugin-MapasNetwork.git
+	url = https://github.com/mapasculturais/plugin-MapasNetwork.git
