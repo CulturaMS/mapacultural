@@ -363,6 +363,13 @@ $config_plugin = [
         ],
         "MapasNetwork" => [
             "namespace" => "MapasNetwork",
+            "config" => [
+                'nodes' => explode(",", env("MAPAS_NETWORK_NODES", "")),
+                'filters' => [
+                    'agent' => [ 'En_Estado' => 'MS' ],
+                    'space' => [ 'En_Estado' => 'MS' ],
+                ]
+            ]
         ]             
     ]
 ];
