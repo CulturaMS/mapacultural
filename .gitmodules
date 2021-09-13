@@ -37,4 +37,3 @@
 [submodule "plugins/MapasNetwork"]
 	path = plugins/MapasNetwork
 	url = git@github.com:mapasculturais/plugin-MapasNetwork.git
-	branch = develop
