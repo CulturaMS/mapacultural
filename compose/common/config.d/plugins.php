@@ -383,7 +383,47 @@ $config_plugin = [
                     'space' => [ 'En_Estado' => 'MS' ],
                 ]
             ]
-        ]             
+        ],
+        "GenericPaymentExport" => [
+            "namespace" => "GenericPaymentExport",
+            "config" => [
+                "slug" => "genericpaymentexport",
+                "name" => "de dados financeiros",
+                'is_opportunity_managed_handler' => function ($opportunity) {
+                    return ($opportunity->id == env("GENERIC_PAYMENT_OPPORTUNITY_ID", 137));
+                },
+                'file_name_prefix' => "op",
+                'fields' => [
+                    "TIPO_IDENTIFICACAO" => "default",
+                    "TIPO_CREDOR" => "default",
+                    'EMAIL' => [3943,3955],
+                    'NATUREZA_JURIDICA' => "nulo", 
+                    'CPF' => 3953,
+                    'NOME_SOCIAL' => 3918,
+                    'CNPJ' => null, 
+                    'RAZAO_SOCIAL' => null,
+                    'LOGRADOURO' => 3941,
+                    'NUMERO' => 3941,
+                    'COMPLEMENTO' => 3941,
+                    'BAIRRO' => 3941,
+                    'MUNICIPIO' => 3941,
+                    'CEP' => 3941,
+                    'ESTADO' => 3941,
+                    'TELEFONE' => [3946,1945,3944],
+                    'NUM_BANCO' => 3923,
+                    'NOME_BANCO' => 3923 ,   
+                    'AGENCIA_BANCO' => 3916,
+                    'DIGITO_AGENCIA' => 3920,
+                    'CONTA_BANCO' => 3915,
+                    'DIGITO_CONTA' => 3919,
+                    'SITUACAO' => "default",
+                    'VALOR' => null,
+                    'INSCRICAO_ID' => 'default',
+                    'CONTA_OPERACAO' => 3925,
+                    'TIPO_CONTA' => 3927,
+                ]              
+            ]
+        ]                  
     ]
 ];
 
