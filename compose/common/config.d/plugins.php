@@ -318,22 +318,43 @@ $config_plugin = [
         "AbstractValidator" => [
             "namespace" => "AbstractValidator",
             "config" => []
-        ],
+        ],        
         'AppealValidatorMsCulturaCidada' => [
             "namespace" => "AppealValidator",
             "config" => [
+                "slug" => "validador_recurso",
+                'name' => "Validador de recurso",
+                'required_validations' => ['homologvalidador', 'conselheirosvalidador', 'funtrabvalidador', 'sisgedvalidador'], 
+                'required_validations_for_export' => ['homologvalidador', 'conselheirosvalidador', 'funtrabvalidador', 'sisgedvalidador'],
                 "is_opportunity_managed_handler" => function ($opportunity) {
                     return ($opportunity->id == env("MSCULTURACIDADA_APPEAL_OPPOTUNITY_ID", 137));
                 },
             
             ]
         ],
+        "CONSELHEIROS" => [
+            "namespace" => "GenericValidator",
+            "config" => [
+                "name" => "CONSELHEIROS",
+                'slug' => "conselheirosvalidador",
+                'required_validations' => ['funtrabvalidador', 'sisgedvalidador'], 
+                'required_validations_for_export' => [],
+                'homologation_required' => true,
+                'homologation_required_for_export' => true ,                           
+                'is_opportunity_managed_handler' => function ($opportunity) {
+                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_CONSELHEIROS_OPPOTUNITY_ID", 137));
+                },
+            ]
+        ],             
         "FUNTRAB" => [
             "namespace" => "GenericValidator",
             "config" => [
-                "name" => "Validador FUNTRAB",
+                "name" => "FUNTRAB",
                 'slug' => "funtrabvalidador",
-                'required_validations' => ['funtrabvalidador', 'sisgedvalidador', 'conselheirosvalidador'],                
+                'required_validations' => ['conselheirosvalidador', 'sisgedvalidador'], 
+                'required_validations_for_export' => [],
+                'homologation_required' => true,
+                'homologation_required_for_export' => true ,        
                 'is_opportunity_managed_handler' => function ($opportunity) {
                     return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_FUNTRAB_OPPOTUNITY_ID", 137));
                 },
@@ -342,25 +363,17 @@ $config_plugin = [
         "SISGED" => [
             "namespace" => "GenericValidator",
             "config" => [
-                "name" => "Validador SISGED",
+                "name" => "SISGED",
                 'slug' => "sisgedvalidador",
-                'required_validations' => ['funtrabvalidador', 'sisgedvalidador', 'conselheirosvalidador'],                
+                'required_validations' => ['conselheirosvalidador', 'funtrabvalidador'],
+                'required_validations_for_export' => [],
+                'homologation_required' => true,
+                'homologation_required_for_export' => true ,
                 'is_opportunity_managed_handler' => function ($opportunity) {
                     return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_SISGED_OPPOTUNITY_ID", 137));
                 },
             ]
-        ],
-        "CONSELHEIROS" => [
-            "namespace" => "GenericValidator",
-            "config" => [
-                "name" => "Validador CONSELHEIROS",
-                'slug' => "conselheirosvalidador", 
-                'required_validations' => ['funtrabvalidador', 'sisgedvalidador', 'conselheirosvalidador'],               
-                'is_opportunity_managed_handler' => function ($opportunity) {
-                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_CONSELHEIROS_OPPOTUNITY_ID", 137));
-                },
-            ]
-        ],
+        ], 
         "MapasNetwork" => [
             "namespace" => "MapasNetwork",
             "config" => [
