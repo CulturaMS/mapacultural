@@ -294,19 +294,35 @@ $config_plugin = [
                     "message_status" => [
                         10 => [
                             'title' => \MapasCulturais\i::__('Sua solicitação foi aprovada'),
-                            'message' => \MapasCulturais\i::__('Sua inscrição foi analisada e homologada e a solicitação do benefício validada pela FCMS. Aguardande o pagamento do benefício.'),
+                            'message' => [
+                                'part1' => \MapasCulturais\i::__('Sua inscrição foi analisada e homologada e a solicitação do benefício validada pela FCMS. Aguardande o pagamento do benefício.'),
+                                'part2' => "",
+                                'part3' => "",
+                                'part4' => "",
+                            ],
                             'complement' => "",
                             'has_appeal' => false,
                         ],
                         3 => [
                             'title' => \MapasCulturais\i::__('Sua solicitação não foi homologada'),
-                            'message' => \MapasCulturais\i::__('Sua inscrição foi analisada, mas não foi homologada por não atender aos requisitos de elegibilidade.'),
+                            'message' => [
+                                'part1' => \MapasCulturais\i::__('Prezado(a) Trabalhador(a) da Cultura,'),
+                                'part2' => \MapasCulturais\i::__('em pré-análise de sua inscrição no programa “MS Cultura Cidadã”, foi identificado o não preenchimento de um ou mais requisitos exigidos no Art. 2º da Portaria FCMS nº 023/2021.'),
+                                'part3' => \MapasCulturais\i::__('Para realizar a retificação das informações apontadas, você deve enviar exclusivamente para o email suporte.mapacultural.ms@gmail as correções solicitadas até o dia 24/09/2021, data do encerramento das inscrições'),
+                                'part4' => "",
+                            ],
                             'complement' => \MapasCulturais\i::__('Conforme previsto pela Portaria FCMS nº 023/2021, Art. 3º, o interessado poderá oferecer recurso contendo suas razões, a ser encaminhando exclusivamente para o e-mail msculturacidada@gmail.com, no prazo de 05 (cinco) dias contados do envio de e-mail que informa o indeferimento.'),
-                            'has_appeal' => true,
+                            'has_appeal' => false,
                         ],
                         2 => [
                             'title' => \MapasCulturais\i::__('Sua solicitação não foi aprovada'),
-                            'message' => \MapasCulturais\i::__('Sua inscrição foi analisada e homologada, mas invalidada após consulta em outras bases de dados oficiais.'),
+                            'message' => [
+                                'part1' => \MapasCulturais\i::__('Sua inscrição foi analisada e homologada, mas invalidada após consulta em outras bases de dados oficiais.'),
+                                'part2' => "",
+                                'part3' => "",
+                                'part4' => "",
+
+                            ],
                             'complement' => "Descrição da condição impeditiva verificada conforme retorno da consulta externa (Funtrab, RH, Conselho), conforme Art. 3º da Lei nº 5.688, de 2021.",
                             'has_appeal' => true,
                         ],
@@ -337,7 +353,7 @@ $config_plugin = [
             "config" => [
                 "name" => "CONSELHEIROS",
                 'slug' => "conselheirosvalidador",
-                'required_validations' => ['funtrabvalidador', 'sisgedvalidador'], 
+                'required_validations' => ['funtrabvalidador', 'sisgedvalidador', 'financeiro'], 
                 'required_validations_for_export' => [],
                 'homologation_required' => true,
                 'homologation_required_for_export' => true ,                           
@@ -351,7 +367,7 @@ $config_plugin = [
             "config" => [
                 "name" => "FUNTRAB",
                 'slug' => "funtrabvalidador",
-                'required_validations' => ['conselheirosvalidador', 'sisgedvalidador'], 
+                'required_validations' => ['conselheirosvalidador', 'sisgedvalidador', 'financeiro'], 
                 'required_validations_for_export' => [],
                 'homologation_required' => true,
                 'homologation_required_for_export' => true ,        
@@ -365,7 +381,7 @@ $config_plugin = [
             "config" => [
                 "name" => "SISGED",
                 'slug' => "sisgedvalidador",
-                'required_validations' => ['conselheirosvalidador', 'funtrabvalidador'],
+                'required_validations' => ['conselheirosvalidador', 'funtrabvalidador', 'financeiro'],
                 'required_validations_for_export' => [],
                 'homologation_required' => true,
                 'homologation_required_for_export' => true ,
