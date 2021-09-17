@@ -214,7 +214,7 @@ $config_plugin = [
                     'link_documentation' => "https://www.fundacaodecultura.ms.gov.br/ms-cultura-cidada/",
 
                     // Texto que contem o link da documentação do edital
-                    'text_link_documentation' => \MapasCulturais\i::__("clicando aqui <br/> <h4>Inscrições abertas até 17/09/2021</h4>", "streamlined-opportunity"),
+                    'text_link_documentation' => \MapasCulturais\i::__("clicando aqui <br/> <h4>Inscrições abertas até 24/09/2021</h4>", "streamlined-opportunity"),
 
                     // Texto informativo ao lado do link
                     'text_info_link_documentation' => \MapasCulturais\i::__("Acesse os critérios para a concessão do benefício", "streamlined-opportunity"),
