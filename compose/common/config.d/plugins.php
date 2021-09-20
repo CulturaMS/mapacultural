@@ -186,7 +186,7 @@ $config_plugin = [
             'config' => [
                 'enabled_plugin' => true,
                 'slug' => 'msculturacidada',
-                'opportunity_id' => env("MSCULTURACIDADA_OPPOTUNITY_ID", 137),
+                'opportunity_id' => env("MSCULTURACIDADA_OPPORTUNITY_ID", 137),
                 'logo_institution' => 'img/logo-site.png',
                 'logo_footer' => 'img/logo-instituicao.png',
                 'logo_center' => 'img/logo-mscc-140x60.png',
@@ -343,7 +343,7 @@ $config_plugin = [
                 'required_validations' => ['homologvalidador', 'conselheirosvalidador', 'funtrabvalidador', 'sisgedvalidador'], 
                 'required_validations_for_export' => ['homologvalidador', 'conselheirosvalidador', 'funtrabvalidador', 'sisgedvalidador'],
                 "is_opportunity_managed_handler" => function ($opportunity) {
-                    return ($opportunity->id == env("MSCULTURACIDADA_APPEAL_OPPOTUNITY_ID", 137));
+                    return ($opportunity->id == env("MSCULTURACIDADA_APPEAL_OPPORTUNITY_ID", 137));
                 },
             
             ]
@@ -358,7 +358,7 @@ $config_plugin = [
                 'homologation_required' => true,
                 'homologation_required_for_export' => true ,                           
                 'is_opportunity_managed_handler' => function ($opportunity) {
-                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_CONSELHEIROS_OPPOTUNITY_ID", 137));
+                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_CONSELHEIROS_OPPORTUNITY_ID", 137));
                 },
             ]
         ],             
@@ -372,7 +372,7 @@ $config_plugin = [
                 'homologation_required' => true,
                 'homologation_required_for_export' => true ,        
                 'is_opportunity_managed_handler' => function ($opportunity) {
-                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_FUNTRAB_OPPOTUNITY_ID", 137));
+                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_FUNTRAB_OPPORTUNITY_ID", 137));
                 },
             ]
         ],
@@ -386,7 +386,7 @@ $config_plugin = [
                 'homologation_required' => true,
                 'homologation_required_for_export' => true ,
                 'is_opportunity_managed_handler' => function ($opportunity) {
-                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_SISGED_OPPOTUNITY_ID", 137));
+                    return ($opportunity->id == env("MSCULTURACIDADA_GENERIC_SISGED_OPPORTUNITY_ID", 137));
                 },
             ]
         ], 
