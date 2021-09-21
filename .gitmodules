@@ -40,3 +40,6 @@
 [submodule "plugins/GenericPaymentExport"]
 	path = plugins/GenericPaymentExport
 	url = https://github.com/mapasculturais/plugin-GenericPaymentExport.git
+[submodule "plugins/FinancialValidador"]
+	path = plugins/FinancialValidador
+	url = git@github.com:mapasculturais/Plugin-FinancialValidador.git
