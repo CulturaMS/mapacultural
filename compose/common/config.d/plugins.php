@@ -191,6 +191,7 @@ $config_plugin = [
                 'logo_footer' => 'img/logo-instituicao.png',
                 'logo_center' => 'img/logo-mscc-140x60.png',
                 'schedule_datetime' => '2021-08-30 9:00:00',
+                'schedule_closing' => '2021-09-24 23:59:00',
                 'consolidation_requires_validations' => ['funtrabvalidador', 'sisgedvalidador', 'conselheirosvalidador'],
                 'initial_statement_enabled' => true,
                
@@ -226,7 +227,7 @@ $config_plugin = [
                     'link_button' => env("MSCULTURACIDADA_LINK_BUTTON_BEFORE_SEARCH",'msculturacidada/cadastro'),
 
                     // Texto que será exibido no local do botão quando o mesmo esteja desabilitado
-                    'text_button_disabled' => env("MSCULTURACIDADA_TEXT_DISABLED_BUTTON_BEFORE_SEARCH",'Inscricoes em breve !'),
+                    'text_button_disabled' => env("MSCULTURACIDADA_TEXT_DISABLED_BUTTON_BEFORE_SEARCH",'INSCRIÇÕES ENCERRADAS'),
                 ],
                 'img_home_before_search' => [
                     // true para usar uma imagem acima do texto que será inserido na home
