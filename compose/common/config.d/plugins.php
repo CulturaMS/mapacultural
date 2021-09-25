@@ -224,7 +224,7 @@ $config_plugin = [
                     'text_button' => env("MSCULTURACIDADA_TEXT_BUTTON_BEFORE_SEARCH", \MapasCulturais\i::__("Solicite seu auxilio", "streamlined-opportunity")) ,
 
                     //Link que o botão deve acessar
-                    'link_button' => env("MSCULTURACIDADA_LINK_BUTTON_BEFORE_SEARCH",'msculturacidada/cadastro'),
+                    'link_button' => env("MSCULTURACIDADA_LINK_BUTTON_BEFORE_SEARCH",'/msculturacidada/cadastro'),
 
                     // Texto que será exibido no local do botão quando o mesmo esteja desabilitado
                     'text_button_disabled' => env("MSCULTURACIDADA_TEXT_DISABLED_BUTTON_BEFORE_SEARCH",'INSCRIÇÕES ENCERRADAS'),
