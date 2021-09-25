@@ -1,6 +1,7 @@
 <?php
 
 use MapasCulturais\App;
+use MapasCulturais\i;
 
 $app = App::i();
 ?>
@@ -13,6 +14,9 @@ $app = App::i();
         <a class="btn btn-accent btn-large" href="<?=$link_button?>"><?=$text_button?></a>
     <?php }else{ ?>
         <h3><?=$text_button_disabled?></h3>
+        <?php if(!$isRegistrationOpen) { ?>
+            <a class="btn btn-accent btn-large" href="<?=$link_button?>"><?=i::__('Consulte sua inscrição', 'streamlined-opportunity')?></a>
+        <?php } ?>
     <?php } ?>
     <br><br>
 </div>
