@@ -6,6 +6,14 @@ $config_plugin = [
         'EvaluationMethodDocumentary' => ['namespace' => 'EvaluationMethodDocumentary'],
         
         'MultipleLocalAuth' => [ 'namespace' => 'MultipleLocalAuth' ],
+        'MapasBlame' => [
+            'namespace' => 'MapasBlame',
+            'config' => [                                          
+                'request.logData.PATCH' => function ($data) {
+                    return $data;
+                },               
+            ]
+        ],
         'AldirBlanc' => [
             'namespace' => 'AldirBlanc',
             'config' => [
