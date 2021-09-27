@@ -29,7 +29,7 @@ return [
 
         file_put_contents(BASE_PATH."files/delete_duplecated_registrations_ms_cuturacidada_01_log-dbupdate.txt", implode("\n",$result));
     },
-    'DROP Metadados duplicados - 2' => function () use ($conn, $app) {
+    'DROP Metadados duplicados - 3' => function () use ($conn, $app) {
         $conn->executeQuery("DELETE FROM agent_meta m1 
             USING (
             SELECT MAX(id) as id, key, object_id 
