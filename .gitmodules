@@ -43,3 +43,6 @@
 [submodule "plugins/FinancialValidador"]
 	path = plugins/FinancialValidador
 	url = https://github.com/mapasculturais/Plugin-FinancialValidador.git
+[submodule "plugins/MapasBlame"]
+	path = plugins/MapasBlame
+	url = https://github.com/mapasculturais/plugin-MapasBlame.git
