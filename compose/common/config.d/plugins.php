@@ -293,7 +293,7 @@ $config_plugin = [
                  /**EMAIL DURANTE TROCA DE STATUS DA INSCRIÇÃO */
                 "email_alter_status" => [
                     "url_image_body" => 'img/logo_ms_Cultura_cidada.png',
-                    "project_name" => \MapasCulturais\i::__("no programa MS Cultura cidadã", "streamlined-opportunity"),
+                    "project_name" => \MapasCulturais\i::__("no programa MS Cultura Cidadã", "streamlined-opportunity"),
                     "subject" => \MapasCulturais\i::__("Confirmação de cadastro MS Cultura cidadã", "streamlined-opportunity"),
                     "send_email_status" => [3],
                     "message_appeal" => [
@@ -304,7 +304,7 @@ $config_plugin = [
                         10 => [
                             'title' => \MapasCulturais\i::__('Sua solicitação foi aprovada'),
                             'message' => [
-                                'part1' => \MapasCulturais\i::__('Sua inscrição foi analisada e homologada e a solicitação do benefício validada pela FCMS. Aguardande o pagamento do benefício.'),
+                                'part1' => \MapasCulturais\i::__('Sua inscrição foi analisada e homologada e a solicitação do benefício validada pela FCMS. Aguarde o pagamento do benefício.'),
                                 'part2' => "",
                                 'part3' => "",
                                 'part4' => "",
