@@ -409,16 +409,6 @@ $config_plugin = [
                 ]
             ]
         ],
-        'FinancialValidador' => [
-            'namespace' => "FinancialValidador",
-            'config' => [
-                'slug' => 'msccfinanceiro',
-                'name' => 'Validador Financeiro',
-                'is_opportunity_managed_handler' => function ($opportunity) {
-                    return ($opportunity->id == env("FINANTIAL_VALIDATOR_OPPORTUNITY_ID", 137));
-                },
-            ]
-        ],
         "GenericPaymentExport" => [
             "namespace" => "GenericPaymentExport",
             "config" => [
@@ -459,7 +449,18 @@ $config_plugin = [
                     'TIPO_CONTA' => 3927,
                 ]              
             ]
-        ]                 
+        ],
+        'FinancialValidador' => [
+            'namespace' => "FinancialValidador",
+            'config' => [
+                'slug' => 'msccfinanceiro',
+                'name' => 'Validador Financeiro',
+                'is_opportunity_managed_handler' => function ($opportunity) {
+                    return ($opportunity->id == env("FINANTIAL_VALIDATOR_OPPORTUNITY_ID", 137));
+                },
+            ]
+        ],
+                      
     ]
 ];
 
