@@ -458,7 +458,7 @@ $config_plugin = [
         'FinancialValidador' => [
             'namespace' => "FinancialValidador",
             'config' => [
-                'slug' => 'msccfinanceiro',
+                'slug' => 'financial_validator',
                 'name' => 'Validador Financeiro',
                 'is_opportunity_managed_handler' => function ($opportunity) {
                     return ($opportunity->id == env("FINANTIAL_VALIDATOR_OPPORTUNITY_ID", 137));
