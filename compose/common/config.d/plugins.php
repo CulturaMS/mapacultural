@@ -337,6 +337,11 @@ $config_plugin = [
                         ],
 
                     ]
+                ],
+                'email_payment' => [
+                    10 => [
+                        'title' => \MapasCulturais\i::__('Pagamento efetuado'),
+                    ]
                 ]
             ]
         ],
