@@ -202,6 +202,7 @@ $config_plugin = [
                 'schedule_closing' => '2021-09-24 23:59:00',
                 'consolidation_requires_validations' => ['funtrabvalidador', 'sisgedvalidador', 'conselheirosvalidador'],
                 'initial_statement_enabled' => true,
+                "email_hidden_copy" => "msculturacidada@gmail.com",
                
                 'text_home_before_search' => [
                     // true para usar um texto acima do formulário de pesquisa da home
