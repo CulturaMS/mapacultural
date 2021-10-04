@@ -227,7 +227,7 @@ $config_plugin = [
                     'text_link_documentation' => \MapasCulturais\i::__("clicando aqui <br/> <h4>Inscrições abertas até 24/09/2021</h4>", "streamlined-opportunity"),
 
                     // Texto informativo ao lado do link
-                    'text_info_link_documentation' => \MapasCulturais\i::__("Acesse os critérios para a concessão do benefício", "streamlined-opportunity"),
+                    'text_info_link_documentation' => \MapasCulturais\i::__("Acesse os critérios para a concessão do benefício e os modelos dos <b>ANEXOS</b> do formulário", "streamlined-opportunity"),
 
                     //texto dentro do botão
                     'text_button' => env("MSCULTURACIDADA_TEXT_BUTTON_BEFORE_SEARCH", \MapasCulturais\i::__("Solicite seu auxilio", "streamlined-opportunity")) ,
