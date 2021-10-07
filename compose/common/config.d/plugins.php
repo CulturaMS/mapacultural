@@ -461,6 +461,10 @@ $config_plugin = [
             'config' => [
                 'slug' => 'financial_validator',
                 'name' => 'Validador Financeiro',
+                'fields' => [
+                    'NOME_COMPLETO' => 3949,
+                    'CPF' => 3953,
+                ],
                 'is_opportunity_managed_handler' => function ($opportunity) {
                     return ($opportunity->id == env("FINANTIAL_VALIDATOR_OPPORTUNITY_ID", 137));
                 },
