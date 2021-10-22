@@ -318,7 +318,7 @@ $config_plugin = [
                             'message' => [
                                 'part1' => \MapasCulturais\i::__(''),
                                 'part2' => \MapasCulturais\i::__('Em pré-análise de sua inscrição no programa “MS Cultura Cidadã”, foi identificado o não preenchimento do(s) seguinte(s) requisito(s), exigidos no Art. 2º da Portaria FCMS nº 023/2021.'),
-                                'part3' => \MapasCulturais\i::__('Para realizar a retificação das informações apontadas, você deve enviar exclusivamente para o email suporte.mapacultural.ms@gmail.com as correções solicitadas até o dia 24/09/2021, data do encerramento das inscrições'),
+                                'part3' => \MapasCulturais\i::__(''),
                                 'part4' => "",
                             ],
                             'complement' => \MapasCulturais\i::__('Conforme previsto pela Portaria FCMS nº 023/2021, Art. 3º, o interessado poderá oferecer recurso contendo suas razões, a ser encaminhando exclusivamente para o e-mail msculturacidada@gmail.com, no prazo de 05 (cinco) dias contados do envio de e-mail que informa o indeferimento.'),
