@@ -296,30 +296,41 @@ $config_plugin = [
                     "url_image_body" => 'img/logo_ms_Cultura_cidada.png',
                     "project_name" => \MapasCulturais\i::__("no programa MS Cultura Cidadã", "streamlined-opportunity"),
                     "subject" => \MapasCulturais\i::__("O status da sua inscrição no programa MS Cultura Cidadã mudou", "streamlined-opportunity"),
-                    "send_email_status" => [3],                    
+                    "send_email_status" => ['2','3','10'],                    
                     "message_appeal" => [
                         'title' => \MapasCulturais\i::__('Você pode entrar com recurso'),
                         'message' => \MapasCulturais\i::__('Conforme previsto pela Portaria FCMS nº 023/2021, Art. 3º, o interessado poderá oferecer recurso contendo suas razões, a ser encaminhando exclusivamente para o e-mail msculturacidada@gmail.com, no prazo de 05 (cinco) dias contados do envio de e-mail que informa o indeferimento.'),
                     ],
-                    "message_status" => [
+                    "message_status" => [                        
                         10 => [
                             'title' => \MapasCulturais\i::__('Sua solicitação foi aprovada'),
                             'message' => [
-                                'part1' => \MapasCulturais\i::__('Sua inscrição foi analisada e homologada e a solicitação do benefício validada pela FCMS. Aguarde o pagamento do benefício.'),
-                                'part2' => "",
-                                'part3' => "",
-                                'part4' => "",
+                                'part1' => \MapasCulturais\i::__('Sua inscrição foi analisada, homologada e a solicitação do benefício validada pela FCMS. Aguardando o pagamento do benefício.'),
+                                'part2' => \MapasCulturais\i::__(''),
+                                'part3' => \MapasCulturais\i::__(''),
+                                'part4' => \MapasCulturais\i::__(''),
+                                'part4' => \MapasCulturais\i::__(''),
+                                'part5' => \MapasCulturais\i::__(''),
+                                'part6' => \MapasCulturais\i::__(''),
+                                'part7' => \MapasCulturais\i::__(''),
                             ],
-                            'complement' => "",
+                            'complement' => \MapasCulturais\i::__(''),
                             'has_appeal' => false,
                         ],
                         3 => [
                             'title' => \MapasCulturais\i::__('Sua solicitação não foi homologada'),
                             'message' => [
-                                'part1' => \MapasCulturais\i::__(''),
-                                'part2' => \MapasCulturais\i::__('Em pré-análise de sua inscrição no programa “MS Cultura Cidadã”, foi identificado o não preenchimento do(s) seguinte(s) requisito(s), exigidos no Art. 2º da Portaria FCMS nº 023/2021.'),
-                                'part3' => \MapasCulturais\i::__(''),
-                                'part4' => "",
+                                'part1' => \MapasCulturais\i::__('Conforme disposto no Art. 3º da Portaria FCMS Nº 023/2021, comunicamos que:'),
+                                'part2' => \MapasCulturais\i::__('Sua inscrição foi analisada, mas não foi homologada por não atender aos requisitos de elegibilidade.'),
+                                'part3' => \MapasCulturais\i::__('Conforme previsto pela Portaria FCMS nº 023/2021, Art. 3º, o interessado poderá oferecer recurso contendo suas razões, a ser encaminhando exclusivamente para o e-mail msculturacidada@gmail.com, no prazo de 05 (cinco) dias contados do envio de e-mail que informa o indeferimento.'),
+                                'part4' => \MapasCulturais\i::__("ATENÇÃO: O recurso deverá ser encaminhado exclusivamente para o e-mail  msculturacidada@gmail.com, e deverá conter:"),
+                                'part5' => \MapasCulturais\i::__('a. Identificação completa do recorrente;
+                                                                  b. Identificação do número da inscrição;
+                                                                  c. O pedido do recurso, com identificação do item recorrido;
+                                                                  d. Documentos comprobatórios, quando cabíveis; 
+                                                                  e. Razões que fundamentem o recurso.'),
+                                'part6' => \MapasCulturais\i::__(''),
+                                'part7' => \MapasCulturais\i::__(''),
                             ],
                             'complement' => \MapasCulturais\i::__('Conforme previsto pela Portaria FCMS nº 023/2021, Art. 3º, o interessado poderá oferecer recurso contendo suas razões, a ser encaminhando exclusivamente para o e-mail msculturacidada@gmail.com, no prazo de 05 (cinco) dias contados do envio de e-mail que informa o indeferimento.'),
                             'has_appeal' => false,
@@ -327,14 +338,22 @@ $config_plugin = [
                         2 => [
                             'title' => \MapasCulturais\i::__('Sua solicitação não foi aprovada'),
                             'message' => [
-                                'part1' => \MapasCulturais\i::__('Sua inscrição foi analisada e homologada, mas invalidada após consulta em outras bases de dados oficiais.'),
-                                'part2' => "",
-                                'part3' => "",
-                                'part4' => "",
+                                'part1' => \MapasCulturais\i::__('Conforme disposto no Art. 3º da Portaria FCMS Nº 023/2021, comunicamos que:'),
+                                'part2' => \MapasCulturais\i::__('Sua solicitação foi analisada e homologada pela equipe da FCMS, mas invalidada após consulta em outras bases de dados oficiais.'),
+                                'part3' => \MapasCulturais\i::__('Conforme previsto pela Portaria FCMS nº 023/2021, Art. 3º, o interessado poderá oferecer recurso contendo suas razões, a ser encaminhando exclusivamente para o e-mail msculturacidada@gmail.com, no prazo de 05 (cinco) dias contados do envio de e-mail que informa o indeferimento.'),
+                                'part4' => \MapasCulturais\i::__('ATENÇÃO: O recurso deverá ser encaminhado exclusivamente para o e-mail  msculturacidada@gmail.com, e deverá conter:'),
+                                'part5' => \MapasCulturais\i::__('a. Identificação completa do recorrente;
+                                                                  b. Identificação do número da inscrição;
+                                                                  c. O pedido do recurso, com identificação do item recorrido;
+                                                                  d. Documentos comprobatórios, quando cabíveis; 
+                                                                  e. Razões que fundamentem o recurso.
+                                                                 '),
+                                'part6' => \MapasCulturais\i::__(''),
+                                'part7' => \MapasCulturais\i::__(''),
 
                             ],
                             'complement' => "Descrição da condição impeditiva verificada conforme retorno da consulta externa (Funtrab, RH, Conselho), conforme Art. 3º da Lei nº 5.688, de 2021.",
-                            'has_appeal' => true,
+                            'has_appeal' => false,
                         ],
 
                     ]
