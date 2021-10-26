@@ -384,7 +384,7 @@ $config_plugin = [
                             ],
                             'complement' => "Descrição da condição impeditiva verificada conforme retorno da consulta externa (Funtrab, RH, Conselho), conforme Art. 3º da Lei nº 5.688, de 2021.",
                             'has_appeal' => false,
-                        ],
+                        ]
 
                     ]
                 ],
