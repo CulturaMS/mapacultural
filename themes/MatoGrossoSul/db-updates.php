@@ -54,5 +54,9 @@ return [
                 m1.object_id = m2.object_id AND 
                 m1.id <> m2.id;");
         $app->log->debug("Limpaza de metados em inscrições feita");
+    },
+    'DROP Evaluation 1731148439' => function () use ($conn, $app) {
+        $conn->executeQuery("DELETE FROM registration_evaluation WHERE id = 2236");
+        $app->log->debug("Apaga avaliação duplicada");
     }
 ];
