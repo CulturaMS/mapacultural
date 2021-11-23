@@ -62,5 +62,9 @@ return [
     'UPDATE status Registrations 1851198763, 1213339754' => function () use ($conn, $app) {
         $conn->executeQuery("UPDATE registration SET status = 3 WHERE id IN (1851198763, 1213339754)");
         $app->log->debug("Atualiza status das inscrições 1851198763, 1213339754");
-    }
+    },
+    'DROP Evaluation 739077302' => function () use ($conn, $app) {
+        $conn->executeQuery("DELETE FROM registration_evaluation WHERE id IN (4554)");
+        $app->log->debug("Apaga avaliação duplicada 739077302");
+    },
 ];
