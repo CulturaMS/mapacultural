@@ -67,4 +67,8 @@ return [
         $conn->executeQuery("DELETE FROM registration_evaluation WHERE id IN (4554)");
         $app->log->debug("Apaga avaliação duplicada 739077302");
     },
+    'DROP Evaluation 1521292768, 435834864, 1677555209' => function () use ($conn, $app) {
+        $conn->executeQuery("DELETE FROM registration_evaluation WHERE id in (6381, 6384, 5263, 6380, 6383, 5270, 6379, 6382, 6385)");
+        $app->log->debug("Apaga avaliação duplicada");
+    },
 ];
