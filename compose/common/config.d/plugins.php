@@ -491,6 +491,7 @@ $config_plugin = [
                     'NUM_BANCO' => 3923,
                     'AGENCIA_BANCO' => 3916,
                     'CONTA_BANCO' => 3915,
+                    'OPERACAO_CONTA' => 3925,
                     'INSCRICAO_ID' => 'default',
                     'ERROS_AGENCIA' => 'default',
                     'ERROS_CONTA' => 'default',
