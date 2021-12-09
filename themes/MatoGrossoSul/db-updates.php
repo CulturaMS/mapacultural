@@ -73,6 +73,10 @@ return [
     },
     'ALTER STATUS Inscrição 905257174' => function () use ($conn, $app) {
         $conn->executeQuery("UPDATE registration SET status = 3 WHERE id = 905257174");
-        $app->log->debug("AAltera status inscrição 905257174 para não selecionada");
+        $app->log->debug("Altera status inscrição 905257174 para não selecionada");
+    },
+    'DROP metadata 1521292768, 435834864, 1677555209' => function () use ($conn, $app) {
+        $conn->executeQuery("DELETE FROM registration_meta WHERE key IN ('conselheirosvalidador_raw', 'funtrabvalidador_raw','sisgedvalidador_raw') AND object_id IN (1521292768, 435834864, 1677555209)");
+        $app->log->debug("Deleta metadados dos validadores");
     }
 ];
