@@ -71,4 +71,8 @@ return [
         $conn->executeQuery("DELETE FROM registration_evaluation WHERE id in (6381, 6384, 5263, 6380, 6383, 5270, 6379, 6382, 6385)");
         $app->log->debug("Apaga avaliação duplicada");
     },
+    'ALTER STATUS Inscrição 905257174' => function () use ($conn, $app) {
+        $conn->executeQuery("UPDATE registration SET status = 3 WHERE id = 905257174");
+        $app->log->debug("AAltera status inscrição 905257174 para não selecionada");
+    }
 ];
