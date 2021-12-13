@@ -89,6 +89,7 @@ Além de conferir a agenda de eventos, você também pode colaborar na gestão d
         $this->asset('img/home-opportunities.jpg', false);
         $this->asset('img/home-developers.jpg', false);
         $this->asset('img/share.png', false);
+        $this->asset('img/logo-mcms.png', false);
 
         // $this->jsObject['assets']['logo-instituicao'] = $this->asset('img/logo-instituicao.png', false);
         // $this->enqueueScript('app', 'hide-fields', 'js/hide-fields.js');
