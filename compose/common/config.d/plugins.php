@@ -288,7 +288,6 @@ $config_plugin = [
                 'form_screen' => [
                     'title' => \MapasCulturais\i::__("Formulário de inscrição", "streamlined-opportunity")
                 ],
-
                 /*EMAIL DE CONFIRMAÇÃO DE INSCRIÇÃO */
                 "email_confirm_registration" => [
                     'project_name' => \MapasCulturais\i::__("no programa MS Cultura cidadã", "streamlined-opportunity"),
