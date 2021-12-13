@@ -14,7 +14,7 @@ return [
         "urlSupportSite" => 'https://www.fundacaodecultura.ms.gov.br',
         'statusCreateAgent' => env('STATUS_CREATE_AGENT', 0),
         'urlSupportEmail' => 'suporte.mapacultural.ms@gmail.com',
-        'urlImageToUseInEmails' => 'https://www.mapacultural.ms.gov.br/assets/img/logo_mapaculturalms.png',
+        'urlImageToUseInEmails' => 'https://www.mapacultural.ms.gov.br/assets/img/logo-mcms.png',
         'urlTermsOfUse' => 'https://www.mapacultural.ms.gov.br/files/opportunity/1/termo_de_uso_-_mapa_cultural_de_ms.pdf',
         'enableLoginByCPF' => env('AUTH_LOGIN_BY_CPF', true),
         'passwordMustHaveCapitalLetters' => env('AUTH_PASS_CAPITAL_LETTERS', true),
