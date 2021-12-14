@@ -302,6 +302,7 @@ $config_plugin = [
                     "project_name" => \MapasCulturais\i::__("no programa MS Cultura Cidadã", "streamlined-opportunity"),
                     "subject" => \MapasCulturais\i::__("O status da sua inscrição no programa MS Cultura Cidadã mudou", "streamlined-opportunity"),
                     "send_email_status" => ['2','3','10'],
+                    "messageDefaultNoSendEmail" => \MapasCulturais\i::__('INVÁLIDA,  mais de uma inscrição enviada pelo mesmo requerente; foi  considerada apenas a inscrição com data mais recente.'),
                     "noSendEmail" => [
                         '1806711786',
                         '549138470',
@@ -330,8 +331,12 @@ $config_plugin = [
                         '770277326',
                         '1590978775',
                         '260727837',
-                        '905257174',
-                    ],                   
+                        '905257174',                        
+                    ], 
+                    'specialMessage' => [
+                        '905257174' => \MapasCulturais\i::__('- Declaração de Ciência Conjunta - Anexo I, incompleta, sem a última página que deve conter a assinatura de próprio punho pelo requerente.
+                        - Cópia digital da carteira de trabalho profissional não contém a página de registro da última rescisão e a folha seguinte em branco, de forma a demonstrar ausência de registro de emprego formal.')
+                    ],                  
                     "message_appeal" => [
                         'title' => \MapasCulturais\i::__('Você pode entrar com recurso'),
                         'message' => \MapasCulturais\i::__('Conforme previsto pela Portaria FCMS nº 023/2021, Art. 3º, o interessado poderá oferecer recurso contendo suas razões, a ser encaminhando exclusivamente para o e-mail msculturacidada@gmail.com, no prazo de 05 (cinco) dias contados do envio de e-mail que informa o indeferimento.'),
