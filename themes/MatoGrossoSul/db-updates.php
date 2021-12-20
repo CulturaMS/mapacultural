@@ -78,5 +78,29 @@ return [
     'DROP metadata 1521292768, 435834864, 1677555209' => function () use ($conn, $app) {
         $conn->executeQuery("DELETE FROM registration_meta WHERE key IN ('conselheirosvalidador_raw', 'funtrabvalidador_raw','sisgedvalidador_raw') AND object_id IN (1521292768, 435834864, 1677555209)");
         $app->log->debug("Deleta metadados dos validadores");
+    },
+    'UPDATE Altera metadado accountIsActive para o status 1' => function () use ($conn, $app) {
+        $dql = "SELECT 
+                    u.id 
+                FROM 
+                    MapasCulturais\\Entities\\User u
+                    JOIN MapasCulturais\\Entities\\UserMeta um WITH u.id = um.owner
+                    WHERE u.lastLoginTimestamp < '2021-12-20' AND um.key = 'accountIsActive' and um.value <> '1'";
+                
+        $query = $app->em->createQuery($dql);
+        $userIds = $query->getResult();
+        $total = count($userIds);
+
+        $ids = [];
+        foreach($userIds as $key => $usrId){
+            $ids[] = $usrId['id'];
+        }
+
+        if($ids){
+            $list = implode(",", $ids);
+            $conn->executeQuery("UPDATE user_meta set value = '1' WHERE key = 'accountIsActive' AND object_id IN ({$list})");
+            $app->log->debug("Metadado de accountIsActive alterado para {$total} contas para o status 1");
+        }
+      
     }
 ];
