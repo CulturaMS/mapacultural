@@ -459,6 +459,7 @@ $config_plugin = [
             "namespace" => "MapasNetwork",
             "config" => [
                 'nodes' => explode(",", env("MAPAS_NETWORK_NODES", "")),
+                "nodeSlug" => env("MAPAS_NETWORK_SLUG", ($_SERVER["HOSTNAME"] ?? parse_url(\MapasCulturais\App::i()->baseUrl, PHP_URL_HOST))),
                 'filters' => [
                     'agent' => [ 'En_Estado' => 'MS' ],
                     'space' => [ 'En_Estado' => 'MS' ],
