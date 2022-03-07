@@ -77,6 +77,11 @@ Além de conferir a agenda de eventos, você também pode colaborar na gestão d
         $app->hook('view.render(<<*>>):before', function() use($app) {
             $this->_publishAssets();
         });
+
+        // Remove ícone de download das planilhas caso naos eja adm
+        $app->hook('enabled.agent.spreadsheet.map', function(&$enabled_export_spreadsheet_map) use ($app){
+            $enabled_export_spreadsheet_map = $app->user->is('admin') ? true : false;
+        });
     }
 
     protected function _publishAssets() {
