@@ -1,4 +1,4 @@
-FROM mapasculturais/mapasculturais:v5.1.52
+FROM mapasculturais/mapasculturais:v5.1.55
 RUN apt install curl -y
 
 COPY compose/common/config.php /var/www/html/protected/application/conf/config.php
